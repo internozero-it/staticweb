@@ -34,7 +34,7 @@ params:
     # Main hero title
     title: Benvenuti su Interno Zer0
     # Hero subtitle (optional)
-    subtitle: Lo spazio DEDICATO al Co-Working a Campi Bisenzio
+    subtitle: Lo spazio DEDICATO al Co-Working a Campi Bisenzio (FI). Qui puoi semplicemente lavorare!
     # Button text
     buttontext: Prenota Subito!
     # Where the main hero button links to
@@ -58,8 +58,8 @@ params:
   navbar:
 #  - title: Features
 #    url: "#section1"
-#  - title: Ingressi
-#    url: "#section2"
+  - title: Ingressi
+    url: "#section1"
   - title: Contatti
     url: "#section5"
 # - title: Log in
@@ -80,6 +80,19 @@ params:
 #    - title: Stampante/Climatizzatore/Frigorifero
 #      icon: laptop-cloud
 #      text: Per darti il massimo del comfort
+  section1:
+    title: Cosa Trovi Da Noi
+    subtitle:
+    tiles:
+    - title: Giornaliero (9-18) da 15€
+      icon: hours-24
+      text: Include scrivania, Wi-Fi e caffè
+    - title: Settimanale (Lun-Ven) da 70€
+      icon: calendar-week
+      text: Include il Giornaliero, stampa multifunzione, 25% sconto su eventi e corsi
+    - title: Mensile (30gg) da 250€
+      icon: calendar-month
+      text: Include il Settimanale, 50% sconto su eventi e corsi
 #  section2:
 #    title: You're here because you want the best
 #    subtitle: And we know it
@@ -126,20 +139,20 @@ params:
     # Logo (from static/images/logos/___)
     logo: internozero1.svg
     # Social Media Title
-    socialmediatitle: Follow Us
-    # Social media links (GitHub, Twitter, etc.). All are optional.
-    socialmedia:
-    - link: https://github.com/#
-      # Icons are from Font Awesome
-      icon: github
-    - link: https://dribbble.com/#
-      icon: dribbble
-    - link: https://facebook.com/#
-      icon: facebook
-    - link: https://twitter.com/
-      icon: twitter
-    - link: https://bitbucket.org/#
-      icon: bitbucket
+#    socialmediatitle: Follow Us
+#    # Social media links (GitHub, Twitter, etc.). All are optional.
+#    socialmedia:
+#    - link: https://github.com/#
+#      # Icons are from Font Awesome
+#      icon: github
+#    - link: https://dribbble.com/#
+#      icon: dribbble
+#    - link: https://facebook.com/#
+#      icon: facebook
+#    - link: https://twitter.com/
+#      icon: twitter
+#    - link: https://bitbucket.org/#
+#      icon: bitbucket
     bulmalogo: false
     quicklinks:
 #      column1:
@@ -166,10 +179,10 @@ params:
 #          link: /
 #        - text: Developers
 #          link: /
-      column3:
-        title: "Blog"
-        links:
-        - text: Latest news
-          link: /blog/first
-        - text: Tech articles
-          link: /blog/second
+#      column3:
+#        title: "Blog"
+#        links:
+#        - text: Latest news
+#          link: /blog/first
+#        - text: Tech articles
+#          link: /blog/second
