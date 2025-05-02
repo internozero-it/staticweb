@@ -155,10 +155,11 @@ params:
 #      icon: bitbucket
     bulmalogo: false
     quicklinks:
-#      column1:
-#        title: "Product"
-#        links:
-#        - text: Discover features
+      column1:
+        title: "Dove ci troviamo"
+        links:
+        - text: Via del Melograno, angolo con via delle Betulle, 5013 Campi Bisenzio (FI)
+          link: https://maps.app.goo.gl/owLasgSvYsaU3xMd8
 #          link: /
 #        - text: Why choose our product?
 #          link: /
