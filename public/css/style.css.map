@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "style.css",
-	"sourceRoot": "/home/eject/interno",
+	"sourceRoot": "C:/Users/teoka/Documents/git/staticweb",
 	"sources": [
 		"themes/hugo-fresh/assets/style.sass",
 		"themes/bulma/bulma.sass",

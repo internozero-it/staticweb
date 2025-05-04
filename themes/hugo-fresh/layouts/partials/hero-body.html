@@ -7,8 +7,13 @@
 <div class="hero-body">
   <div class="container">
     <div class="columns is-vcentered">
-      <div class="column is-5 is-offset-1 landing-caption">
-        <h1 class="title is-2 is-bold is-spaced">
+      <div class="column is-5 is-offset-1">
+        <figure class="image is-4by3">
+          <img src="{{ printf "images/%s" $image | relURL }}" alt="Description">
+        </figure>
+      </div>
+      <div class="column is-6 is-offset-1 landing-caption">
+        <h1 class="title is-4 is-bold is-spaced">
           {{ $title }}
         </h1>
         {{ with $subtitle }}
@@ -21,11 +26,6 @@
             {{ $buttonText }}
           </a>
         </p>
-      </div>
-      <div class="column is-5 is-offset-1">
-        <figure class="image is-4by3">
-          <img src="{{ printf "images/%s" $image | relURL }}" alt="Description">
-        </figure>
       </div>
     </div>
   </div>

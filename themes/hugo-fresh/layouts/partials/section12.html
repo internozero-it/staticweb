@@ -1,7 +1,7 @@
-{{- $section1 := .Site.Params.section1 }}
-{{- $title    := index $section1 "title" }}
-{{- $subtitle := index $section1 "subtitle" }}
-{{- $tiles    := index $section1 "tiles" }}
+{{- $section12 := .Site.Params.section12 }}
+{{- $title    := index $section12 "title" }}
+{{- $subtitle := index $section12 "subtitle" }}
+{{- $tiles    := index $section12 "tiles" }}
 <section class="section section-feature-grey is-medium" id="section1">
   <div class="container">
     <div class="title-wrapper has-text-centered">
@@ -25,7 +25,7 @@
                 <p>{{ .text }}</p>
             </div>
             <div class="card-action">
-<!--              <a href="{{ .url }}" class="button btn-align-md accent-btn raised">{{ .buttonText }}</a>-->
+              <a href="{{ .url }}" class="button btn-align-md accent-btn raised">{{ .buttonText }}</a>
             </div>
           </div>
         </div>

@@ -6,9 +6,10 @@
       <ul>
         {{- range $clientLogos }}
         <li>
-          <a {{ if .url }} href="{{ .url }}" {{ end }}>
-            <img class="partner-logo" src="{{ printf "images/logos/clients/%s.svg" .logo | relURL }}">
-          </a>
+          <a target="_tab" {{ if .url }} href="{{ .url }}" {{ end }}>
+<!--    # Original Code
+      <img class="partner-logo" src="{{ printf "images/logos/clients/%s.svg" .logo | relURL }}" alt="{{ .name }}"> -->
+          <img class="partner-logo" src="{{ printf "images/logos/clients/%s.png" .logo | relURL }}"></a>
         </li>
         {{- end }}
       </ul>

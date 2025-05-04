@@ -8,6 +8,10 @@
     {{ partial "section1.html" . }}
     {{ end }}
 
+    {{ if .Site.Params.section12 }}
+    {{ partial "section12.html" . }}
+    {{ end }}
+
     {{ if .Site.Params.section2 }}
     {{ partial "section2.html" . }}
     {{ end }}
