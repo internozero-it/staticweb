@@ -88,12 +88,12 @@ params:
     - title: Giornaliero da 15€
       icon: hours-24
       text: Dalle 9:00 alle 18:00
-      url: https://www.internozero.it/section12
+      url: "#section12"
       buttonText: Confronta e Prenota
     - title: Settimanale da 70€
       icon: calendar-week
       text: Da Lun. a Ven. - 9 to 18
-      url: https://www.internozero.it/section12
+      url: "#section12"
       buttonText: Confronta e Prenota
     - title: Mensile da 250€
       icon: calendar-month
@@ -124,7 +124,7 @@ params:
       - "- Bollitore"
       - "- Disponibile dal Lunedì al Venerdì"
       - "- Orario 9:00 - 18:00"
-      - "- Pagamento primo giorno dell'abbonamento (Ricorsivo)"
+      - "- Pagamento primo giorno dell'abbonamento"
       - "- Scrivania prenotabile (media priorità)"
       - "- 25% di sconto su attività organizzate da InternoZer0 (Posto garantito)"
       - "- 10% di sconto su attività organizzate da terzi (Posto non garantito)"
@@ -144,20 +144,11 @@ params:
       - "- 20% di sconto su attività organizzate da terzi (Posto non garantito)"  
       url: https://www.internozero.it/prenota
       buttonText: "Prenota Ora!"
-#  section2:
-#    title: You're here because you want the best
-#    subtitle: And we know it
-#    features:
-#    - title: Powerful and unified interface
-#      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-#      # Icon (from static/images/illustrations/icons/___.svg)
-#      icon: laptop-globe
-#    - title: Cross-device synchronisation
-#      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-#      icon: doc-sync
-#    - title: Nomad system
-#      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-#      icon: mobile-feed
+  section2:
+    title: Resta Connesso!
+    title2: Iscriviti alla Newsletter...
+    subtitle: ...per ricevere aggiornamenti su attività ed eventi!
+    buttonText: "Eventi esclusivi ti aspettano!"
 #  section3:
 #    title: One platform
 #    subtitle: To rule them all
