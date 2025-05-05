@@ -59,8 +59,12 @@ params:
 #      url: https://bulma.io/
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
+  - title: Newsletter
+    url: "#section2"  
   - title: Ingressi
     url: "#section1"
+  - title: Confronta e Prenota
+    url: "#section12"
   - title: Contatti
     url: "#section5"
 # - title: Log in
