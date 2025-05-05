@@ -2,7 +2,8 @@
 {{- $title    := index $section12 "title" }}
 {{- $subtitle := index $section12 "subtitle" }}
 {{- $tiles    := index $section12 "tiles" }}
-<section class="section section-feature-grey is-medium" id="section1">
+{{- $list    := index $section12 "list" }}
+<section class="section section-feature-white is-small" id="section12">
   <div class="container">
     <div class="title-wrapper has-text-centered">
       <h2 class="title is-2">{{ $title }}</h2>
@@ -14,18 +15,26 @@
       <div class="columns">
         {{- range $tiles }}
         <div class="column is-one-third">
-          <div class="feature-card is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
-            <div class="card-title">
+          <div class="feature-card-long is-bordered has-text-centered revealOnScroll delay-1">
+            <div class="card-title-long">
               <h4>{{ .title }}</h4>
             </div>
-            <div class="card-icon">
+            <div class="card-icon-long">
                 <img src="{{ printf "images/illustrations/icons/%s.svg" .icon | relURL }}">
             </div>
-            <div class="card-text">
-                <p>{{ .text }}</p>
+            <div class="card-text-long" style="text-align: left;">
+              {{- if .text }}
+              <p>{{ .text }}</p>
+              {{- else if .list }}
+              <ul>
+                {{- range .list }}
+                <li>{{ . }}</li><br>
+                {{- end }}
+              </ul>
+              {{- end }}
             </div>
             <div class="card-action">
-              <a href="{{ .url }}" class="button btn-align-md accent-btn raised">{{ .buttonText }}</a>
+              <a href="{{ .url }}" class="button btn-align-md accent-btn raised">{{ .buttonText }}</a><br><br>
             </div>
           </div>
         </div>

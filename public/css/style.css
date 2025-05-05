@@ -8164,9 +8164,43 @@ Cards and Card content styles
     padding: 0 40px; }
     .feature-card .card-text p {
       color: #999; }
+  .feature-card .card-text-left {
+    padding: 0 40px; }
+    .feature-card .card-text-left p {
+      color: #999;
+      text-align: left; }
   .feature-card .card-action {
     margin-top: 10px; }
   .feature-card.is-bordered {
+    border: 1px solid #ededed; }
+
+.feature-card-long {
+  width: 300px;
+  height: 4000 px;
+  background-color: #fff;
+  border-radius: 3px;
+  margin: 0 auto; }
+  .feature-card-long .card-title-long h4 {
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 25px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #444F60; }
+  .feature-card-long .card-icon-long img {
+    height: 120px;
+    margin-top: 20px; }
+  .feature-card-long .card-text-long {
+    padding: 0 10px; }
+    .feature-card-long .card-text-long p {
+      color: #999; }
+  .feature-card-long .card-text-left {
+    padding: 0 40px; }
+    .feature-card-long .card-text-left p {
+      color: #999;
+      text-align: left; }
+  .feature-card-long .card-action {
+    margin-top: 10px; }
+  .feature-card-long.is-bordered {
     border: 1px solid #ededed; }
 
 .flex-card {
