@@ -29,7 +29,7 @@
             {{ . }}
         </h2>
         {{ end }}
-        <p>
+        <p class="buttons-container"></p>
           <a class="button cta rounded primary-btn raised" href="{{ $buttonLink }}">
             {{ $buttonText }}
           </a>
@@ -37,6 +37,17 @@
             {{ $buttonText2 }}
           </a>
         </p>
+        <style>
+          .buttons-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px; /* Adjust spacing as needed */
+            flex-wrap: wrap;
+          }
+          .buttons-container .button {
+            margin: 5px 0; /* Optional: Add vertical spacing for better appearance */
+          }
+        </style>
       </div>
     </div>
   </div>

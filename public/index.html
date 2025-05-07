@@ -41,7 +41,7 @@
   <div class="container">
     <div class="navbar-brand">
       <a class="navbar-item" href="/">
-        <img src="/images/logos/internozero1.svg" alt="" width="500" height="228">
+        <img src="/images/logos/internozero1.svg" alt="" width="300" height="228">
       </a>
 
       <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
@@ -135,7 +135,7 @@
             a 100 metri dalla fermata del BUS e 150 metri dalla Coop di via Palagetta
         </h2>
         
-        <p>
+        <p class="buttons-container"></p>
           <a class="button cta rounded primary-btn raised" href="#section6">
             Prenota Subito!
           </a>
@@ -143,6 +143,17 @@
             Dove e Come
           </a>
         </p>
+        <style>
+          .buttons-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;  
+            flex-wrap: wrap;
+          }
+          .buttons-container .button {
+            margin: 5px 0;  
+          }
+        </style>
       </div>
     </div>
   </div>
