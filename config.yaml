@@ -36,11 +36,13 @@ params:
     # Hero subtitle (optional)
     subtitle: Lo spazio DEDICATO al Co-Working a Campi Bisenzio (FI).
     subsubtitle: 
-      - Da noi troverai Wi-Fi con conconnessione FTTH ed Aria Condizionata
+      - a 100 metri dalla fermata del BUS e 150 metri dalla Coop di via Palagetta
     # Button text
     buttontext: Prenota Subito!
+    buttontext2: Dove e Come
     # Where the main hero button links to
-    buttonlink: "#section5"
+    buttonlink: "#section6"
+    buttonlink2: "#section2a"
     # Hero image (from static/images/___)
     image: illustrations/fullLogo.svg
     # Footer logos (from static/images/logos/clients/*.svg)
@@ -48,136 +50,92 @@ params:
     clientlogos:
     - logo: repetitiveit
       url: https://www.repetitive.it
-#      name: Repetitive IT
     - logo: powerupstudio
       url: https://www.powerupstudio.it
-#    - logo: kromo
-#      url: https://github.com/StefMa/hugo-fresh
-#    - logo: infinite
-#      url: https://hugo-fresh.vercel.app/
-#    - logo: gutwork
-#      url: https://bulma.io/
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
   - title: Newsletter
     url: "#section2"  
   - title: Ingressi
     url: "#section1"
-  - title: Confronta e Prenota
-    url: "#section12"
+  - title: Prenota
+    url: "#section6"
+  - title: Perché Interno Zer0?
+    url: "#section2a"
   - title: Contatti
     url: "#section5"
-# - title: Log in
-#    url: /
-#  - title: Sign up
-#    url: /
-#    button: true
-#  section1:
-#    title: Cosa Trovi Da Noi
-#    subtitle:
-#    tiles:
-#    - title: Scrivanie Mobili e Fiibra Ottica
-#      icon: plug-cloud
-#      text: Per farti lavorare in Locale e Remoto
-#    - title: Acqua, Caffè e Thè
-#      icon: mouse-globe
-#      text: Per non lasciarti a secco
-#    - title: Stampante/Climatizzatore/Frigorifero
-#      icon: laptop-cloud
-#      text: Per darti il massimo del comfort
   section1:
     title: Ingressi @InternoZer0
     subtitle:
     tiles:
     - title: Giornaliero da 15€
-      icon: hours-24
-      text: Dalle 9:00 alle 18:00
+      icon: hours-9
+      text: 9:00-18:00
       url: "#section12"
-      buttonText: Confronta e Prenota
+      buttonText: Confronta gli ingressi
     - title: Settimanale da 70€
       icon: calendar-week
-      text: Da Lun. a Ven. - 9 to 18
+      text: Da Lunedì a Venerdì
       url: "#section12"
-      buttonText: Confronta e Prenota
+      buttonText: Confronta gli ingressi
     - title: Mensile da 250€
       icon: calendar-month
-      text: 4 Settimane, dal Lun. a Ven.
+      text: 4 Settimane, Lun-Ven
       url: "#section12"
-      buttonText: Confronta e Prenota
+      buttonText: Confronta gli ingressi
   section12:
     title: Confronta e Prenota
     subtitle:
     tiles:
     - title: Giornaliero da 15€
-      icon: hours-24
+      icon: hours-9
       list:
-      - "- Acqua del Sindaco"
-      - "- Macchinetta del caffè"
-      - "- Bollitore"
-      - "- Disponibile dal Lunedì al Venerdì"
-      - "- Orario 9:00 - 18:00"
-      - "- Pagamento all'ingresso"
-      - "- Scrivania prenotabile (bassa priorità)"
-      url: https://www.internozero.it/prenota
+      - "- Paga più giorni ed usali quando vuoi"
+      - "- Scrivania non prenotabile (bassa priorità)"
+      - "- 10% di sconto su attività organizzate da InternoZer0 (Posto garantito)"
+      url: "#section6"
       buttonText: "Prenota Ora!"
     - title: Settimanale da 70€
       icon: calendar-week
       list:
-      - "- Acqua del Sindaco"
-      - "- Macchinetta del caffè"
-      - "- Bollitore"
-      - "- Disponibile dal Lunedì al Venerdì"
-      - "- Orario 9:00 - 18:00"
-      - "- Pagamento primo giorno dell'abbonamento"
+      - "- Inizio della settimana è sempre il Lunedì"
       - "- Scrivania prenotabile (media priorità)"
       - "- 25% di sconto su attività organizzate da InternoZer0 (Posto garantito)"
-      - "- 10% di sconto su attività organizzate da terzi (Posto non garantito)"
-      url: https://www.internozero.it/prenota
+#      - "- 10% di sconto su attività organizzate da terzi (Posto non garantito)"
+      url: "#section6"
       buttonText: "Prenota Ora!"
     - title: Mensile da 250€
       icon: calendar-month
       list:
-      - "- Acqua del Sindaco"
-      - "- Macchinetta del caffè"
-      - "- Bollitore"
-      - "- Disponibile dal Lunedì al Venerdì"
-      - "- Orario 9:00 - 18:00"
-      - "- Pagamento primo giorno dell'abbonamento"
+      - "- Il mese è di 4 settimane, comincia sempre il Lunedì"
       - "- Scrivania prenotabile (alta priorità)"
       - "- 50% di sconto su attività organizzate da InternoZer0 (Posto garantito)"
-      - "- 20% di sconto su attività organizzate da terzi (Posto non garantito)"  
-      url: https://www.internozero.it/prenota
+#      - "- 20% di sconto su attività organizzate da terzi (Posto non garantito)"  
+      url: "#section6"
       buttonText: "Prenota Ora!"
   section2:
     title: Resta Connesso!
     title2: Iscriviti alla Newsletter...
     subtitle: ...per ricevere aggiornamenti su attività ed eventi!
     buttonText: "Eventi esclusivi ti aspettano!"
-#  section3:
-#    title: One platform
-#    subtitle: To rule them all
-#    image: illustrations/mockups/app-mockup.png
-#    buttonText: Get started
-#    buttonLink: "#"
-#  section4:
-#    title: Our Clients love us!
-#    subtitle: Lorem ipsum sit dolor amet is a dummy text used by typography industry
-#    clients:
-#    - name: Irma Walters
-#      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
-#      job: Accountant
-#      img: 1
-#    - name: John Bradley
-#      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
-#      job: Financial Analyst
-#      img: 2
-#    - name: Gary Blackman
-#      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
-#      job: HR Manager
-#      img: 3
+  section2a:
+    title2a: "Perché scegliere Interno Zer0? Riassunto in 3 Parole:"
+    subtitle2a: Compatto, Connesso, Confortevole
+    text2a: 
+      - "Siamo a Campi Bisenzio (FI), a 100 metri dalla fermata del BUS e 150 metri dalla Coop di via Palagetta; una location perfetta dove trovare facillmente parcheggio ed essere 2 minuti a piedi da supermecato, bar, ristorante oppure da un trancio di pizza da mangiare passeggiando."
+      - "### Inoltre Trovi:"
+      - "- WI-FI 5G connesso a Fibra FTTH"
+      - "- Riscaldamento/aria condizionata"
+      - "- Mini-Cucina con: acqua potabile, minifrigo, bollitore, macchinetta del caffè a cialde"
   section5:
     title: Vuoi sapere come funziona Interno Zer0?
-    subtitle: Contattaci, vieni a trovarci e scopri il nostro spazio!
+    subtitle: Contattaci, vieni a trovarci, scopri il nostro spazio!
+    buttonText: Send Message
+    action: https://formspree.io/f/meogevzz
+    method: POST
+  section6:
+    title: Prenota una scrivania
+    subtitle: Seleziona il tipo di ingresso ed il quando, poi ti richiamiamo noi!
     buttonText: Send Message
     action: https://formspree.io/f/meogevzz
     method: POST
