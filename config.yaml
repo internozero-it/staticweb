@@ -34,7 +34,7 @@ params:
     # Main hero title
     title: Qui puoi semplicemente lavorare!
     # Hero subtitle (optional)
-    subtitle: '- Lo spazio DEDICATO al Co-Working a Campi Bisenzio -' 
+    subtitle: 'Lo spazio DEDICATO al Co-Working, a Campi Bisenzio' 
     subsubtitle: 
       - A 100 metri dalla fermata del BUS e 150 metri dalla Coop di via Palagetta
     # Button text
