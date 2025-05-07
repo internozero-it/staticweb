@@ -15,8 +15,8 @@
           <img src="{{ printf "images/%s" $image | relURL }}" alt="Description">
         </figure>
       </div>
-      <div class="column is-6 is-offset-1 landing-caption">
-        <h1 class="title is-4 is-bold is-spaced">
+      <div class="column is-5 is-offset-1 landing-caption">
+        <h1 class="title is-3 is-bold is-spaced">
           {{ $title }}
         </h1>
         {{ with $subtitle }}
@@ -29,10 +29,10 @@
             {{ . }}
         </h2>
         {{ end }}
-        <p class="buttons-container">
+        <p class="buttons-container" style="display: flex; justify-content: space-between;">
           <a class="button cta rounded primary-btn raised" href="{{ $buttonLink2 }}">
             {{ $buttonText2 }}
-          </a><br><br>
+          </a>
           <a class="button cta rounded primary-btn raised" href="{{ $buttonLink }}">
             {{ $buttonText }}
           </a>
