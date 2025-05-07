@@ -8124,8 +8124,8 @@ Classes to change the feel of bulma buttons
 
 .button.button.accent-btn {
   outline: none;
-  border-color: #00efb7;
-  background-color: #00efb7;
+  border-color: #24b574;
+  background-color: #24b574;
   color: #fff;
   transition: all 0.5s; }
   .button.button.accent-btn:hover {
@@ -8134,12 +8134,12 @@ Classes to change the feel of bulma buttons
     box-shadow: 0 14px 26px -12px rgba(104, 187, 136, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(104, 187, 136, 0.2) !important;
     opacity: 0.8; }
   .button.button.accent-btn.btn-outlined {
-    border-color: #00efb7;
-    color: #00efb7;
+    border-color: #24b574;
+    color: #24b574;
     background-color: transparent; }
     .button.button.accent-btn.btn-outlined:hover {
       color: #fff;
-      background-color: #00efb7; }
+      background-color: #24b574; }
 
 /*! _cards.scss v1.0.0 | Commercial License | built on top of bulma.io/Bulmax */
 /* ==========================================================================
@@ -8164,9 +8164,43 @@ Cards and Card content styles
     padding: 0 40px; }
     .feature-card .card-text p {
       color: #999; }
+  .feature-card .card-text-left {
+    padding: 0 40px; }
+    .feature-card .card-text-left p {
+      color: #999;
+      text-align: left; }
   .feature-card .card-action {
     margin-top: 10px; }
   .feature-card.is-bordered {
+    border: 1px solid #ededed; }
+
+.feature-card-long {
+  width: 300px;
+  height: 4000 px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  margin: 0 auto; }
+  .feature-card-long .card-title-long h4 {
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 25px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #444F60; }
+  .feature-card-long .card-icon-long img {
+    height: 120px;
+    margin-top: 20px; }
+  .feature-card-long .card-text-long {
+    padding: 0 10px; }
+    .feature-card-long .card-text-long p {
+      color: #999; }
+  .feature-card-long .card-text-left {
+    padding: 0 40px; }
+    .feature-card-long .card-text-left p {
+      color: #999;
+      text-align: left; }
+  .feature-card-long .card-action {
+    margin-top: 10px; }
+  .feature-card-long.is-bordered {
     border: 1px solid #ededed; }
 
 .flex-card {
@@ -8192,7 +8226,7 @@ Cards and Card content styles
   .flex-card .navigation-tabs.outlined-pills .tabs.tabs-header.secondary {
     background-color: #F39200; }
   .flex-card .navigation-tabs.outlined-pills .tabs.tabs-header.accent {
-    background-color: #00efb7; }
+    background-color: #24b574; }
   .flex-card .navigation-tabs.outlined-pills .tabs.tabs-header ul li a {
     color: #f2f2f2; }
   .flex-card .navigation-tabs.outlined-pills .tabs.tabs-header ul li.is-active a {
@@ -8228,9 +8262,9 @@ input.input {
     input.input.is-secondary-focus:focus ~ span.icon i {
       color: #F39200; }
   input.input.is-accent-focus:focus {
-    border-color: #00efb7; }
+    border-color: #24b574; }
     input.input.is-accent-focus:focus ~ span.icon i {
-      color: #00efb7; }
+      color: #24b574; }
   input.input.is-bloody-focus:focus {
     border-color: #FC354C; }
     input.input.is-bloody-focus:focus ~ span.icon i {

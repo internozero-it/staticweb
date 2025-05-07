@@ -1,6 +1,6 @@
 baseURL: https://www.internozero.it
 languageCode: it
-title: Benvenuti su InternoZer0
+title: Qui puoi semplicemente lavorare!
 
 theme: 'hugo-fresh'
 
@@ -32,106 +32,110 @@ params:
     sizes: [400,400]
   hero:
     # Main hero title
-    title: Benvenuti su Interno Zer0
+    title: Qui puoi semplicemente lavorare!
     # Hero subtitle (optional)
-    subtitle: Lo spazio DEDICATO al Co-Working a Campi Bisenzio (FI). Qui puoi semplicemente lavorare!
+    subtitle: Lo spazio DEDICATO al Co-Working a Campi Bisenzio (FI).
+    subsubtitle: 
+      - a 100 metri dalla fermata del BUS e 150 metri dalla Coop di via Palagetta
     # Button text
     buttontext: Prenota Subito!
+    buttontext2: Dove e Come
     # Where the main hero button links to
-    buttonlink: "#section5"
+    buttonlink: "#section6"
+    buttonlink2: "#section2a"
     # Hero image (from static/images/___)
     image: illustrations/fullLogo.svg
-#    # Footer logos (from static/images/logos/clients/*.svg)
-#    # urls are optional
-#    clientlogos:
-#    - logo: systek
-#      url: https://google.com
-#    - logo: tribe
-#      url: https://stefma.github.io/hugo-fresh/
-#    - logo: kromo
-#      url: https://github.com/StefMa/hugo-fresh
-#    - logo: infinite
-#      url: https://hugo-fresh.vercel.app/
-#    - logo: gutwork
-#      url: https://bulma.io/
+    # Footer logos (from static/images/logos/clients/*.svg)
+    # urls are optional
+    clientlogos:
+    - logo: repetitiveit
+      url: https://www.repetitive.it
+    - logo: powerupstudio
+      url: https://www.powerupstudio.it
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
-#  - title: Features
-#    url: "#section1"
+  - title: Newsletter
+    url: "#section2"  
   - title: Ingressi
     url: "#section1"
+  - title: Prenota
+    url: "#section6"
+  - title: Perché Interno Zer0?
+    url: "#section2a"
   - title: Contatti
     url: "#section5"
-# - title: Log in
-#    url: /
-#  - title: Sign up
-#    url: /
-#    button: true
-#  section1:
-#    title: Cosa Trovi Da Noi
-#    subtitle:
-#    tiles:
-#    - title: Scrivanie Mobili e Fiibra Ottica
-#      icon: plug-cloud
-#      text: Per farti lavorare in Locale e Remoto
-#    - title: Acqua, Caffè e Thè
-#      icon: mouse-globe
-#      text: Per non lasciarti a secco
-#    - title: Stampante/Climatizzatore/Frigorifero
-#      icon: laptop-cloud
-#      text: Per darti il massimo del comfort
   section1:
-    title: Cosa Trovi Da Noi
+    title: Ingressi @InternoZer0
     subtitle:
     tiles:
-    - title: Giornaliero (9-18) da 15€
-      icon: hours-24
-      text: Include scrivania, Wi-Fi e caffè
-    - title: Settimanale (Lun-Ven) da 70€
+    - title: Giornaliero da 15€
+      icon: hours-9
+      text: 9:00-18:00
+      url: "#section12"
+      buttonText: Confronta gli ingressi
+    - title: Settimanale da 70€
       icon: calendar-week
-      text: Include il Giornaliero, stampa multifunzione, 25% sconto su eventi e corsi
-    - title: Mensile (30gg) da 250€
+      text: Da Lunedì a Venerdì
+      url: "#section12"
+      buttonText: Confronta gli ingressi
+    - title: Mensile da 250€
       icon: calendar-month
-      text: Include il Settimanale, 50% sconto su eventi e corsi
-#  section2:
-#    title: You're here because you want the best
-#    subtitle: And we know it
-#    features:
-#    - title: Powerful and unified interface
-#      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-#      # Icon (from static/images/illustrations/icons/___.svg)
-#      icon: laptop-globe
-#    - title: Cross-device synchronisation
-#      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-#      icon: doc-sync
-#    - title: Nomad system
-#      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-#      icon: mobile-feed
-#  section3:
-#    title: One platform
-#    subtitle: To rule them all
-#    image: illustrations/mockups/app-mockup.png
-#    buttonText: Get started
-#    buttonLink: "#"
-#  section4:
-#    title: Our Clients love us!
-#    subtitle: Lorem ipsum sit dolor amet is a dummy text used by typography industry
-#    clients:
-#    - name: Irma Walters
-#      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
-#      job: Accountant
-#      img: 1
-#    - name: John Bradley
-#      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
-#      job: Financial Analyst
-#      img: 2
-#    - name: Gary Blackman
-#      quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
-#      job: HR Manager
-#      img: 3
+      text: 4 Settimane, Lun-Ven
+      url: "#section12"
+      buttonText: Confronta gli ingressi
+  section12:
+    title: Confronta e Prenota
+    subtitle:
+    tiles:
+    - title: Giornaliero da 15€
+      icon: hours-9
+      list:
+      - "- Paga più giorni ed usali quando vuoi"
+      - "- Scrivania non prenotabile (bassa priorità)"
+      - "- 10% di sconto su attività organizzate da InternoZer0 (Posto garantito)"
+      url: "#section6"
+      buttonText: "Prenota Ora!"
+    - title: Settimanale da 70€
+      icon: calendar-week
+      list:
+      - "- Inizio della settimana è sempre il Lunedì"
+      - "- Scrivania prenotabile (media priorità)"
+      - "- 25% di sconto su attività organizzate da InternoZer0 (Posto garantito)"
+#      - "- 10% di sconto su attività organizzate da terzi (Posto non garantito)"
+      url: "#section6"
+      buttonText: "Prenota Ora!"
+    - title: Mensile da 250€
+      icon: calendar-month
+      list:
+      - "- Il mese è di 4 settimane, comincia sempre il Lunedì"
+      - "- Scrivania prenotabile (alta priorità)"
+      - "- 50% di sconto su attività organizzate da InternoZer0 (Posto garantito)"
+#      - "- 20% di sconto su attività organizzate da terzi (Posto non garantito)"  
+      url: "#section6"
+      buttonText: "Prenota Ora!"
+  section2:
+    title: Resta Connesso!
+    title2: Iscriviti alla Newsletter...
+    subtitle: ...per ricevere aggiornamenti su attività ed eventi!
+    buttonText: "Eventi esclusivi ti aspettano!"
+  section2a:
+    title2a: "Perché scegliere Interno Zer0? Riassunto in 3 Parole:"
+    subtitle2a: Compatto, Connesso, Confortevole
+    text2a: 
+      - "Siamo a Campi Bisenzio (FI), a 100 metri dalla fermata del BUS e 150 metri dalla Coop di via Palagetta; una location perfetta dove trovare facillmente parcheggio ed essere 2 minuti a piedi da supermecato, bar, ristorante oppure da un trancio di pizza da mangiare passeggiando."
+      - "### Inoltre Trovi:"
+      - "- WI-FI 5G connesso a Fibra FTTH"
+      - "- Riscaldamento/aria condizionata"
+      - "- Mini-Cucina con: acqua potabile, minifrigo, bollitore, macchinetta del caffè a cialde"
   section5:
     title: Vuoi sapere come funziona Interno Zer0?
-    subtitle: Contattaci, vieni a trovarci e scopri il nostro spazio!
+    subtitle: Contattaci, vieni a trovarci, scopri il nostro spazio!
+    buttonText: Send Message
+    action: https://formspree.io/f/meogevzz
+    method: POST
+  section6:
+    title: Prenota una scrivania
+    subtitle: Seleziona il tipo di ingresso ed il quando, poi ti richiamiamo noi!
     buttonText: Send Message
     action: https://formspree.io/f/meogevzz
     method: POST
@@ -155,10 +159,11 @@ params:
 #      icon: bitbucket
     bulmalogo: false
     quicklinks:
-#      column1:
-#        title: "Product"
-#        links:
-#        - text: Discover features
+      column1:
+        title: "Dove ci troviamo"
+        links:
+        - text: Via del Melograno, angolo con via delle Betulle, 5013 Campi Bisenzio (FI)
+          link: https://maps.app.goo.gl/owLasgSvYsaU3xMd8
 #          link: /
 #        - text: Why choose our product?
 #          link: /
@@ -179,10 +184,10 @@ params:
 #          link: /
 #        - text: Developers
 #          link: /
-#      column3:
-#        title: "Blog"
-#        links:
-#        - text: Latest news
-#          link: /blog/first
+      column3:
+        title: "Website by"
+        links:
+        - text: Repetitive IT
+          link: https://www.repetitive.it
 #        - text: Tech articles
 #          link: /blog/second

@@ -7,7 +7,7 @@
 {{- $action     := index $section5 "action" }}
 {{- $method     := index $section5 "method" }}
 {{- $buttonText := index $section5 "buttontext" | default "Send Message" }}
-<section class="section section-light-grey is-medium" id="section5">
+<section class="section section-light-grey is-small" id="section5">
   <div class="container">
     <div class="title-wrapper has-text-centered">
       <h2 class="title is-2 is-spaced">{{ $title }}</h2>
@@ -30,13 +30,16 @@
                 <input class="input is-medium" name="mobile" type="mobile" placeholder="Telefono">
               </div>
               <div class="column is-12">
-                <textarea class="textarea" name="message" rows="10" placeholder="Write something..."></textarea>
+                <textarea class="textarea" name="message" rows="10" placeholder="Facci sapere se hai domande specifiche..."></textarea>
               </div>
               <div class="form-footer has-text-centered mt-10">
                 <button class="button cta is-large primary-btn raised is-clear">{{ $buttonText }}</button>
               </div>
             </div>
           </form>
+          <p class="has-text-centered mt-5">
+            Oppure se preferisci <a href="tel:3294967991">chiamaci al 3294967991</a>
+          </p></p>
         </div>
       </div>
     </div>

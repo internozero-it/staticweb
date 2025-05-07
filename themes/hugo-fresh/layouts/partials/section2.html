@@ -1,34 +1,60 @@
 {{- $section2 := .Site.Params.section2 }}
 {{- $title    := index $section2 "title" }}
+{{- $title2    := index $section2 "title2" }}
 {{- $subtitle := index $section2 "subtitle" }}
 {{- $features := index $section2 "features" }}
-<section class="section is-medium" id="section2">
+<section class="section section-light-grey is-small" id="section2">
   <div class="container">
     <div class="columns">
       <div class="column is-centered-tablet-portrait">
         <h1 class="title section-title">{{ $title }}</h1>
+        <h2 class="subtitle is-5">{{ $title2 }}</h2>
         <h3 class="subtitle is-5 is-muted">{{ $subtitle }}</h3>
         <div class="divider"></div>
       </div>
+      <br>
+      <br>
+      <br>
       <div class="column is-7 mt-60">
-        {{- range $features }}
-        <article class="media icon-box">
-          <figure class="media-left">
-            <p class="image">
-              <img src="{{ printf "images/illustrations/icons/%s.svg" .icon | relURL }}">
-            </p>
-          </figure>
-          <div class="media-content mt-50">
-            <div class="content">
-              <p>
-                <span class="icon-box-title">{{ .title }}</span>
-
-                <span class="icon-box-text">{{ .text | markdownify }}</span>
-              </p>
+        <!-- AWeber Web Form Generator 3.0.1 -->
+        <form method="post" class="af-form-wrapper" accept-charset="UTF-8" action="https://www.aweber.com/scripts/addlead.pl"  >
+          <div style="display: none;">
+            <input type="hidden" name="meta_web_form_id" value="149425420" />
+            <input type="hidden" name="meta_split_id" value="" />
+            <input type="hidden" name="listname" value="awlist6881373" />
+            <input type="hidden" name="redirect" value="https://www.aweber.com/thankyou-coi.htm?m=text" id="redirect_1392ddd244f7d072e780d2c264e42619" />
+            <input type="hidden" name="meta_adtracking" value="InternoZer0_-_Subscribe" />
+            <input type="hidden" name="meta_message" value="1" />
+            <input type="hidden" name="meta_required" value="name,email" />
+            <input type="hidden" name="meta_tooltip" value="" />
+          </div>
+          <div id="af-form-149425420" class="af-form">
+            <div id="af-body-149425420" class="af-body af-standards">
+              <div class="af-element">
+                <div class="af-textWrap">
+                  <input id="awf_field-118076531" type="text" name="name" class="input is-medium" placeholder="Nome" onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="300" />
+                </div>
+                <div class="af-clear"></div>
+              </div>
+                <div class="af-element">
+                  <div class="af-textWrap">
+                    <input class="input is-medium" id="awf_field-118076532" type="email" name="email" placeholder="Email" tabindex="300" onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';}" />
+                  </div>
+                  <div class="af-clear"></div>
+                </div>
+                <div class="form-footer has-text-right mt-5">
+                  <input name="submit" class="button cta is-large primary-btn raised is-clear" type="submit" value="Subscribe" tabindex="502" />
+                  <div class="af-clear">
+                  </div>
+                </div>
+                <div class="af-element privacyPolicy" style="text-align: center"><p>A proposito di <a title="Privacy Policy" href="https://www.aweber.com/permission.htm" target="_blank" rel="nofollow">Privacy</a></p>
+                  <div class="af-clear"></div>
+                </div>
             </div>
           </div>
-        </article>
-        {{- end }}
+          <div style="display: none;"><img src="https://forms.aweber.com/form/displays.htm?id=jCycLEysLEwM" alt="" /></div>
+        </form>
+        <!-- /AWeber Web Form Generator 3.0.1 -->
       </div>
     </div>
   </div>

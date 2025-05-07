@@ -4,7 +4,7 @@
 {{- $socialMedia := index $footer "socialmedia" }}
 {{- $bulmaLogo   := index $footer "bulmalogo" }}
 {{- $socialMediaTitle    := index $footer "socialmediatitle" }}
-<footer class="footer footer-dark">
+<footer class="footer footer-dark" id="footer">
   <div class="container">
     <div class="columns">
       <div class="column">
@@ -21,7 +21,7 @@
             <ul class="link-list">
               {{- range .links }}
               <li>
-                <a href="{{ .link }}">
+                <a target="_blank" href="{{ .link }}">
                   {{ .text }}
                 </a>
               </li>

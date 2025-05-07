@@ -28,6 +28,51 @@ Cards and Card content styles
             color: $muted-grey;
         }
     }
+    .card-text-left {
+        padding: 0 40px;
+        p {
+            color: $muted-grey;
+            text-align: left;
+        }
+    }
+    .card-action {
+        margin-top: 10px;
+    }
+    &.is-bordered {
+        border: 1px solid $fade-grey;
+    }
+}
+// Feature Card Long
+.feature-card-long {
+    width: 300px;
+    height: 4000 px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    margin: 0 auto;
+    .card-title-long h4 {
+        font-family: 'Open Sans', sans-serif;
+        padding-top: 25px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: $blue-grey;
+    }
+    .card-icon-long img {
+        height: 120px;
+        margin-top: 20px;
+    }
+    .card-text-long {
+        padding: 0 10px;
+        p {
+            color: $muted-grey;
+        }
+    }
+    .card-text-left {
+        padding: 0 40px;
+        p {
+            color: $muted-grey;
+            text-align: left;
+        }
+    }
     .card-action {
         margin-top: 10px;
     }

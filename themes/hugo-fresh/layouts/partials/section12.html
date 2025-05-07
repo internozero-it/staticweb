@@ -1,0 +1,45 @@
+{{- $section12 := .Site.Params.section12 }}
+{{- $title    := index $section12 "title" }}
+{{- $subtitle := index $section12 "subtitle" }}
+{{- $tiles    := index $section12 "tiles" }}
+{{- $list    := index $section12 "list" }}
+<section class="section section-feature-white is-small" id="section12">
+  <div class="container">
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2">{{ $title }}</h2>
+      <h3 class="subtitle is-5 is-muted">{{ $subtitle }}</h3>
+      <div class="divider is-centered"></div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="columns">
+        {{- range $tiles }}
+        <div class="column is-one-third">
+          <div class="feature-card-long is-bordered has-text-centered revealOnScroll delay-1">
+            <div class="card-title-long">
+              <h4>{{ .title }}</h4>
+            </div>
+            <div class="card-icon-long">
+                <img src="{{ printf "images/illustrations/icons/%s.svg" .icon | relURL }}">
+            </div>
+            <div class="card-text-long" style="text-align: left;">
+              {{- if .text }}
+              <p>{{ .text }}</p>
+              {{- else if .list }}
+              <ul>
+                {{- range .list }}
+                <li>{{ . }}</li><br>
+                {{- end }}
+              </ul>
+              {{- end }}
+            </div>
+            <div class="card-action">
+              <a href="{{ .url }}" class="button cta is-large secondary-btn raised is-clear">{{ .buttonText }}</a><br><br>
+            </div>
+          </div>
+        </div>
+        {{- end }}
+      </div>
+    </div>
+  </div>
+</section>

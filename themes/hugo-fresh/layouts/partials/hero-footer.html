@@ -1,14 +1,22 @@
 {{- $hero        := .Site.Params.hero }}
 {{- $clientLogos := index $hero "clientlogos" }}
+{{- $partnertitle      := index $hero "partnertitle" | default "I Nostri Partners"}}
+<div class="container">
+  <div class="title-wrapper has-text-centered">
+    <h2 class="title is-4">{{ $partnertitle }}</h2>
+    <div class="divider is-centered"></div>
+  </div>
+</div>
 <div class="hero-foot mb-20">
   <div class="container">
     <div class="tabs is-centered">
       <ul>
         {{- range $clientLogos }}
         <li>
-          <a {{ if .url }} href="{{ .url }}" {{ end }}>
-            <img class="partner-logo" src="{{ printf "images/logos/clients/%s.svg" .logo | relURL }}">
-          </a>
+          <a target="_tab" {{ if .url }} href="{{ .url }}" {{ end }}>
+<!--    # Original Code
+      <img class="partner-logo" src="{{ printf "images/logos/clients/%s.svg" .logo | relURL }}" alt="{{ .name }}"> -->
+          <img class="partner-logo" src="{{ printf "images/logos/clients/%s.png" .logo | relURL }}"></a>
         </li>
         {{- end }}
       </ul>
