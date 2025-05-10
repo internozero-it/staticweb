@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="it">
   <head>
-	<meta name="generator" content="Hugo 0.147.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta name="generator" content="Hugo 0.147.2"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     
 
 <meta property="og:url" content="http://localhost:1313/">
@@ -113,14 +113,96 @@
 </nav>
 
   
+
 <div class="hero-body">
   <div class="container">
     <div class="columns is-vcentered">
       <div class="column is-5 is-offset-1">
-        <figure class="image is-4by3">
-          <img src="/images/illustrations/fullLogo.svg" alt="Description">
-        </figure>
-      </div>
+        <div id="gallery" class="gallery-container" style="position: relative; text-align: center;"></div>
+        <div style="text-align: center; margin-top: 10px;">
+        </div>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const galleryContainer = document.getElementById("gallery");
+            const imageFolder = "\/images\/gallery\/";
+            const images = [
+              { src: "fulllogo.svg", link: "#section2a" },
+
+
+            ]; 
+            let currentIndex = 0;
+            let autoSwitchInterval;
+
+            
+            const linkElement = document.createElement("a");
+            linkElement.href = images[currentIndex].link;
+            galleryContainer.appendChild(linkElement);
+
+            
+            const imgElement = document.createElement("img");
+            imgElement.src = `${imageFolder}${images[currentIndex].src}`;
+            imgElement.alt = "Gallery Image";
+            imgElement.classList.add("gallery-image");
+            linkElement.appendChild(imgElement);
+
+            
+            imgElement.style.width = "500px"; 
+            imgElement.style.height = "500px"; 
+            imgElement.style.objectFit = "cover"; 
+            imgElement.style.padding = "60px"; 
+
+            
+            const linesContainer = document.createElement("div");
+            linesContainer.style.display = "flex";
+            linesContainer.style.justifyContent = "center";
+            linesContainer.style.alignItems = "center";
+            linesContainer.style.margin = "0 10px";
+
+            const lines = images.map((_, index) => {
+              const line = document.createElement("div");
+              line.style.width = "30px";
+              line.style.height = "5px";
+              line.style.margin = "0 5px";
+              line.style.backgroundColor = index === currentIndex ? "orange" : "grey";
+              line.style.cursor = "pointer"; 
+              line.addEventListener("click", () => {
+          currentIndex = index; 
+          updateGallery();
+          resetAutoSwitch(); 
+              });
+              linesContainer.appendChild(line);
+              return line;
+            });
+
+            
+            galleryContainer.parentElement.appendChild(linesContainer);
+
+            
+            const updateGallery = () => {
+              imgElement.src = `${imageFolder}${images[currentIndex].src}`;
+              linkElement.href = images[currentIndex].link;
+              lines.forEach((line, index) => {
+          line.style.backgroundColor = index === currentIndex ? "orange" : "grey";
+              });
+            };
+
+            
+            const resetAutoSwitch = () => {
+              clearInterval(autoSwitchInterval);
+              autoSwitchInterval = setInterval(() => {
+          currentIndex = (currentIndex + 1) % images.length; 
+          updateGallery();
+              }, 5000);
+            };
+
+            
+            autoSwitchInterval = setInterval(() => {
+              currentIndex = (currentIndex + 1) % images.length; 
+              updateGallery();
+            }, 5000);
+          });
+        </script>
+            </div>
       <div class="column is-5 is-offset-1 landing-caption">
         <h1 class="title is-3 is-bold is-spaced">
           Qui puoi semplicemente lavorare!
@@ -416,9 +498,9 @@
             </div>
             <div class="card-text-long" style="text-align: left;">
               <ul>
-                <li>- Paga per più giorni ed usali quando vuoi (Scadono dopo 90 giorni)</li><br>
+                <li>- Senza bisogno di prenotare</li><br>
+                <li>- Disponibile un blocco di ingressi giornalieri</li><br>
                 <li>- Scrivania prenotabile (bassa priorità)</li><br>
-                <li>- 10% di sconto su attività organizzate da InternoZer0 (Posto garantito)</li><br>
               </ul>
             </div>
             <div class="card-action">
@@ -436,9 +518,9 @@
             </div>
             <div class="card-text-long" style="text-align: left;">
               <ul>
-                <li>- Inizio della settimana è sempre il Lunedì</li><br>
+                <li>- 5 giorni consecutivi (Lun-Ven)</li><br>
                 <li>- Scrivania prenotabile (media priorità)</li><br>
-                <li>- 25% di sconto su attività organizzate da InternoZer0 (Posto garantito)</li><br>
+                <li>- 10% di sconto su attività organizzate da InternoZer0 (Posto garantito)</li><br>
               </ul>
             </div>
             <div class="card-action">
@@ -456,9 +538,9 @@
             </div>
             <div class="card-text-long" style="text-align: left;">
               <ul>
-                <li>- Il mese è di 4 settimane, comincia sempre il Lunedì</li><br>
+                <li>- 4 settimane consecutive (Lun-Ven)</li><br>
                 <li>- Scrivania prenotabile (alta priorità)</li><br>
-                <li>- 50% di sconto su attività organizzate da InternoZer0 (Posto garantito)</li><br>
+                <li>- 25% di sconto su attività organizzate da InternoZer0 (Posto garantito)</li><br>
               </ul>
             </div>
             <div class="card-action">

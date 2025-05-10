@@ -43,8 +43,9 @@ params:
     # Where the main hero button links to
     buttonlink: "#section6"
     buttonlink2: "#section2a"
-    # Hero image (from static/images/___)
-    image: illustrations/fullLogo.svg
+    # Hero images for carousel (from static/images/gallery/_____)
+    # Urls and image names are inside the hero-body template because it is javascript
+
     # Footer logos (from static/images/logos/clients/*.svg)
     # urls are optional
     clientlogos:
@@ -90,27 +91,25 @@ params:
     - title: Giornaliero da 15€
       icon: hours-9
       list:
-      - "- Paga per più giorni ed usali quando vuoi (Scadono dopo 90 giorni)"
+      - "- Senza bisogno di prenotare"
+      - "- Disponibile un blocco di ingressi giornalieri"
       - "- Scrivania prenotabile (bassa priorità)"
-      - "- 10% di sconto su attività organizzate da InternoZer0 (Posto garantito)"
       url: "#section6"
       buttonText: "Prenota Ora!"
     - title: Settimanale da 70€
       icon: calendar-week
       list:
-      - "- Inizio della settimana è sempre il Lunedì"
+      - "- 5 giorni consecutivi (Lun-Ven)"
       - "- Scrivania prenotabile (media priorità)"
-      - "- 25% di sconto su attività organizzate da InternoZer0 (Posto garantito)"
-#      - "- 10% di sconto su attività organizzate da terzi (Posto non garantito)"
+      - "- 10% di sconto su attività organizzate da InternoZer0 (Posto garantito)"
       url: "#section6"
       buttonText: "Prenota Ora!"
     - title: Mensile da 250€
       icon: calendar-month
       list:
-      - "- Il mese è di 4 settimane, comincia sempre il Lunedì"
+      - "- 4 settimane consecutive (Lun-Ven)"
       - "- Scrivania prenotabile (alta priorità)"
-      - "- 50% di sconto su attività organizzate da InternoZer0 (Posto garantito)"
-#      - "- 20% di sconto su attività organizzate da terzi (Posto non garantito)"  
+      - "- 25% di sconto su attività organizzate da InternoZer0 (Posto garantito)"
       url: "#section6"
       buttonText: "Prenota Ora!"
   section2:
