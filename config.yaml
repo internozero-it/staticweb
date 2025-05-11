@@ -91,9 +91,9 @@ params:
     - title: Giornaliero da 15€
       icon: hours-9
       list:
-      - "- Senza bisogno di prenotare"
-      - "- Disponibile un blocco di ingressi giornalieri"
-      - "- Scrivania prenotabile (bassa priorità)"
+      - "- Dalle 9:00 alle 18:00"
+      - "- Carnet di ingressi da usare in 2, 3 o 4 mesi"
+      - "- Possibile prenotare (bassa priorità)"
       url: "#section6"
       buttonText: "Prenota Ora!"
     - title: Settimanale da 70€
