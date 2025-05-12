@@ -92,15 +92,15 @@ params:
       icon: hours-9
       list:
       - "- Dalle 9:00 alle 18:00"
-      - "- Carnet di ingressi da usare in 2, 3 o 4 mesi"
-      - "- Possibile prenotare (bassa priorità)"
+      - "- Acquista un carnet di ingressi da usare quando vuoi"
+      - "- Prenotazione postazione a priorità bassa"
       url: "#section6"
       buttonText: "Prenota Ora!"
     - title: Settimanale da 70€
       icon: calendar-week
       list:
       - "- 5 giorni consecutivi (Lun-Ven)"
-      - "- Scrivania prenotabile (media priorità)"
+      - "- Prenotazione postazione a priorità media"
       - "- 10% di sconto su attività organizzate da InternoZer0 (Posto garantito)"
       url: "#section6"
       buttonText: "Prenota Ora!"
@@ -108,7 +108,7 @@ params:
       icon: calendar-month
       list:
       - "- 4 settimane consecutive (Lun-Ven)"
-      - "- Scrivania prenotabile (alta priorità)"
+      - "- Prenotazione postazione a priorità alta"
       - "- 25% di sconto su attività organizzate da InternoZer0 (Posto garantito)"
       url: "#section6"
       buttonText: "Prenota Ora!"
