@@ -34,17 +34,18 @@ params:
     # Main hero title
     title: Qui puoi semplicemente lavorare!
     # Hero subtitle (optional)
-    subtitle: Lo spazio DEDICATO al Co-Working a Campi Bisenzio (FI).
+    subtitle: 'Lo spazio DEDICATO al Co-Working, a Campi Bisenzio' 
     subsubtitle: 
-      - a 100 metri dalla fermata del BUS e 150 metri dalla Coop di via Palagetta
+      - A 100 metri dalla fermata del BUS e 150 metri dalla Coop di via Palagetta
     # Button text
     buttontext: Prenota Subito!
-    buttontext2: Dove e Come
+    buttontext2: ..Dove e Come..
     # Where the main hero button links to
     buttonlink: "#section6"
     buttonlink2: "#section2a"
-    # Hero image (from static/images/___)
-    image: illustrations/fullLogo.svg
+    # Hero images for carousel (from static/images/gallery/_____)
+    # Urls and image names are inside the hero-body template because it is javascript
+
     # Footer logos (from static/images/logos/clients/*.svg)
     # urls are optional
     clientlogos:
@@ -60,7 +61,7 @@ params:
     url: "#section1"
   - title: Prenota
     url: "#section6"
-  - title: Perché Interno Zer0?
+  - title: Perché InternoZer0?
     url: "#section2a"
   - title: Contatti
     url: "#section5"
@@ -90,27 +91,25 @@ params:
     - title: Giornaliero da 15€
       icon: hours-9
       list:
-      - "- Paga più giorni ed usali quando vuoi"
-      - "- Scrivania non prenotabile (bassa priorità)"
-      - "- 10% di sconto su attività organizzate da InternoZer0 (Posto garantito)"
+      - "- Dalle 9:00 alle 18:00"
+      - "- Acquista un carnet di ingressi da usare quando vuoi"
+      - "- Prenotazione postazione a priorità bassa"
       url: "#section6"
       buttonText: "Prenota Ora!"
     - title: Settimanale da 70€
       icon: calendar-week
       list:
-      - "- Inizio della settimana è sempre il Lunedì"
-      - "- Scrivania prenotabile (media priorità)"
-      - "- 25% di sconto su attività organizzate da InternoZer0 (Posto garantito)"
-#      - "- 10% di sconto su attività organizzate da terzi (Posto non garantito)"
+      - "- 5 giorni consecutivi (Lun-Ven)"
+      - "- Prenotazione postazione a priorità media"
+      - "- 10% di sconto su attività organizzate da InternoZer0 (Posto garantito)"
       url: "#section6"
       buttonText: "Prenota Ora!"
     - title: Mensile da 250€
       icon: calendar-month
       list:
-      - "- Il mese è di 4 settimane, comincia sempre il Lunedì"
-      - "- Scrivania prenotabile (alta priorità)"
-      - "- 50% di sconto su attività organizzate da InternoZer0 (Posto garantito)"
-#      - "- 20% di sconto su attività organizzate da terzi (Posto non garantito)"  
+      - "- 4 settimane consecutive (Lun-Ven)"
+      - "- Prenotazione postazione a priorità alta"
+      - "- 25% di sconto su attività organizzate da InternoZer0 (Posto garantito)"
       url: "#section6"
       buttonText: "Prenota Ora!"
   section2:
@@ -119,16 +118,17 @@ params:
     subtitle: ...per ricevere aggiornamenti su attività ed eventi!
     buttonText: "Eventi esclusivi ti aspettano!"
   section2a:
-    title2a: "Perché scegliere Interno Zer0? Riassunto in 3 Parole:"
+    title2a: "Perché scegliere InternoZer0? Riassunto in 3 Parole:"
     subtitle2a: Compatto, Connesso, Confortevole
     text2a: 
-      - "Siamo a Campi Bisenzio (FI), a 100 metri dalla fermata del BUS e 150 metri dalla Coop di via Palagetta; una location perfetta dove trovare facillmente parcheggio ed essere 2 minuti a piedi da supermecato, bar, ristorante oppure da un trancio di pizza da mangiare passeggiando."
-      - "### Inoltre Trovi:"
+      - "InternoZer0 è uno spazio di Co-Working limitato a 8 postazioni di lavoro, per garantire un ambiente tranquillo e confortevole."
+      - "Lo spazio di Co-Working si trova nella parte sud di Campi Bisenzio a 100 metri dalla fermata del BUS in via Palagetta e 150 metri dal supermercato Coop; una location perfetta dove trovare facillmente parcheggio ed a non più di 2 minuti a piedi da supermercato, bar, ristorante oppure da un trancio di pizza da mangiare passeggiando."
+      - "### Da InternoZer0 Inoltre Trovi:"
       - "- WI-FI 5G connesso a Fibra FTTH"
       - "- Riscaldamento/aria condizionata"
       - "- Mini-Cucina con: acqua potabile, minifrigo, bollitore, macchinetta del caffè a cialde"
   section5:
-    title: Vuoi sapere come funziona Interno Zer0?
+    title: Vuoi sapere come funziona InternoZer0?
     subtitle: Contattaci, vieni a trovarci, scopri il nostro spazio!
     buttonText: Send Message
     action: https://formspree.io/f/meogevzz

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="it">
   <head>
-	<meta name="generator" content="Hugo 0.147.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta name="generator" content="Hugo 0.147.2"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     
 
 <meta property="og:url" content="http://localhost:1313/">
@@ -64,7 +64,7 @@
             Prenota
           </a>
           <a href="#section2a" class="navbar-item is-secondary">
-            Perché Interno Zer0?
+            Perché InternoZer0?
           </a>
           <a href="#section5" class="navbar-item is-secondary">
             Contatti
@@ -102,7 +102,7 @@
           Prenota
         </a>
         <a href="#section2a" class="navbar-item is-secondary">
-          Perché Interno Zer0?
+          Perché InternoZer0?
         </a>
         <a href="#section5" class="navbar-item is-secondary">
           Contatti
@@ -113,32 +113,111 @@
 </nav>
 
   
+
 <div class="hero-body">
   <div class="container">
     <div class="columns is-vcentered">
       <div class="column is-5 is-offset-1">
-        <figure class="image is-4by3">
-          <img src="/images/illustrations/fullLogo.svg" alt="Description">
-        </figure>
-      </div>
-      <div class="column is-6 is-offset-1 landing-caption">
-        <h1 class="title is-4 is-bold is-spaced">
+        <div id="gallery" class="gallery-container" style="position: relative; text-align: center;"></div>
+        <div style="text-align: center; margin-top: 10px;">
+        </div>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const galleryContainer = document.getElementById("gallery");
+            const imageFolder = "\/images\/gallery\/";
+            const images = [
+              { src: "fulllogo.svg", link: "#section2a" },
+
+
+            ]; 
+            let currentIndex = 0;
+            let autoSwitchInterval;
+
+            
+            const linkElement = document.createElement("a");
+            linkElement.href = images[currentIndex].link;
+            galleryContainer.appendChild(linkElement);
+
+            
+            const imgElement = document.createElement("img");
+            imgElement.src = `${imageFolder}${images[currentIndex].src}`;
+            imgElement.alt = "Gallery Image";
+            imgElement.classList.add("gallery-image");
+            linkElement.appendChild(imgElement);
+
+            
+            imgElement.style.width = "400px"; 
+            imgElement.style.height = "$400px"; 
+            imgElement.style.objectFit = "cover"; 
+            imgElement.style.padding = "10px"; 
+
+            
+            const linesContainer = document.createElement("div");
+            linesContainer.style.display = "flex";
+            linesContainer.style.justifyContent = "center";
+            linesContainer.style.alignItems = "center";
+            linesContainer.style.margin = "0 10px";
+
+            const lines = images.map((_, index) => {
+              const line = document.createElement("div");
+              line.style.width = "30px";
+              line.style.height = "5px";
+              line.style.margin = "0 5px";
+              line.style.backgroundColor = index === currentIndex ? "orange" : "grey";
+              line.style.cursor = "pointer"; 
+              line.addEventListener("click", () => {
+          currentIndex = index; 
+          updateGallery();
+          resetAutoSwitch(); 
+              });
+              linesContainer.appendChild(line);
+              return line;
+            });
+
+            
+            galleryContainer.parentElement.appendChild(linesContainer);
+
+            
+            const updateGallery = () => {
+              imgElement.src = `${imageFolder}${images[currentIndex].src}`;
+              linkElement.href = images[currentIndex].link;
+              lines.forEach((line, index) => {
+          line.style.backgroundColor = index === currentIndex ? "orange" : "grey";
+              });
+            };
+
+            
+            const resetAutoSwitch = () => {
+              clearInterval(autoSwitchInterval);
+              autoSwitchInterval = setInterval(() => {
+          currentIndex = (currentIndex + 1) % images.length; 
+          updateGallery();
+              }, 5000);
+            };
+
+            
+            autoSwitchInterval = setInterval(() => {
+              currentIndex = (currentIndex + 1) % images.length; 
+              updateGallery();
+            }, 5000);
+          });
+        </script>
+            </div>
+      <div class="column is-5 is-offset-1 landing-caption">
+        <h1 class="title is-3 is-bold is-spaced">
           Qui puoi semplicemente lavorare!
         </h1>
         
         <h2 class="subtitle is-5 is-muted">
-          Lo spazio DEDICATO al Co-Working a Campi Bisenzio (FI).
+          Lo spazio DEDICATO al Co-Working, a Campi Bisenzio
         </h2>
         
         
         <h2 class="subtitle is-6 is-muted">
-            a 100 metri dalla fermata del BUS e 150 metri dalla Coop di via Palagetta
+            A 100 metri dalla fermata del BUS e 150 metri dalla Coop di via Palagetta
         </h2>
         
         <p class="buttons-container">
-          <a class="button cta rounded primary-btn raised" href="#section2a">
-            Dove e Come
-          </a><br><br>
           <a class="button cta rounded primary-btn raised" href="#section6">
             Prenota Subito!
           </a>
@@ -241,7 +320,7 @@
   <div class="container">
     <div class="columns">
       <div class="column is-centered-tablet-portrait">
-        <h1 class="title section-title">Perché scegliere Interno Zer0? Riassunto in 3 Parole:</h1>
+        <h1 class="title section-title">Perché scegliere InternoZer0? Riassunto in 3 Parole:</h1>
         <h3 class="subtitle is-5 is-muted">Compatto, Connesso, Confortevole</h3>
         <div class="divider"></div>
       </div>
@@ -253,9 +332,11 @@
             <div class="content">
               <p>
                 
-                  <span class="icon-box-text">Siamo a Campi Bisenzio (FI), a 100 metri dalla fermata del BUS e 150 metri dalla Coop di via Palagetta; una location perfetta dove trovare facillmente parcheggio ed essere 2 minuti a piedi da supermecato, bar, ristorante oppure da un trancio di pizza da mangiare passeggiando.</span>
+                  <span class="icon-box-text">InternoZer0 è uno spazio di Co-Working limitato a 8 postazioni di lavoro, per garantire un ambiente tranquillo e confortevole.</span>
                 
-                  <span class="icon-box-text"><h3 id="inoltre-trovi">Inoltre Trovi:</h3>
+                  <span class="icon-box-text">Lo spazio di Co-Working si trova nella parte sud di Campi Bisenzio a 100 metri dalla fermata del BUS in via Palagetta e 150 metri dal supermercato Coop; una location perfetta dove trovare facillmente parcheggio ed a non più di 2 minuti a piedi da supermercato, bar, ristorante oppure da un trancio di pizza da mangiare passeggiando.</span>
+                
+                  <span class="icon-box-text"><h3 id="da-internozer0-inoltre-trovi">Da InternoZer0 Inoltre Trovi:</h3>
 </span>
                 
                   <span class="icon-box-text"><ul>
@@ -354,7 +435,7 @@
 <section class="section section-light-grey is-small" id="section5">
   <div class="container">
     <div class="title-wrapper has-text-centered">
-      <h2 class="title is-2 is-spaced">Vuoi sapere come funziona Interno Zer0?</h2>
+      <h2 class="title is-2 is-spaced">Vuoi sapere come funziona InternoZer0?</h2>
       <h3 class="subtitle is-5 is-muted">Contattaci, vieni a trovarci, scopri il nostro spazio!</h3>
       <div class="divider is-centered"></div>
     </div>
@@ -417,9 +498,9 @@
             </div>
             <div class="card-text-long" style="text-align: left;">
               <ul>
-                <li>- Paga più giorni ed usali quando vuoi</li><br>
-                <li>- Scrivania non prenotabile (bassa priorità)</li><br>
-                <li>- 10% di sconto su attività organizzate da InternoZer0 (Posto garantito)</li><br>
+                <li>- Dalle 9:00 alle 18:00</li><br>
+                <li>- Acquista un carnet di ingressi da usare quando vuoi</li><br>
+                <li>- Prenotazione postazione a priorità bassa</li><br>
               </ul>
             </div>
             <div class="card-action">
@@ -437,9 +518,9 @@
             </div>
             <div class="card-text-long" style="text-align: left;">
               <ul>
-                <li>- Inizio della settimana è sempre il Lunedì</li><br>
-                <li>- Scrivania prenotabile (media priorità)</li><br>
-                <li>- 25% di sconto su attività organizzate da InternoZer0 (Posto garantito)</li><br>
+                <li>- 5 giorni consecutivi (Lun-Ven)</li><br>
+                <li>- Prenotazione postazione a priorità media</li><br>
+                <li>- 10% di sconto su attività organizzate da InternoZer0 (Posto garantito)</li><br>
               </ul>
             </div>
             <div class="card-action">
@@ -457,9 +538,9 @@
             </div>
             <div class="card-text-long" style="text-align: left;">
               <ul>
-                <li>- Il mese è di 4 settimane, comincia sempre il Lunedì</li><br>
-                <li>- Scrivania prenotabile (alta priorità)</li><br>
-                <li>- 50% di sconto su attività organizzate da InternoZer0 (Posto garantito)</li><br>
+                <li>- 4 settimane consecutive (Lun-Ven)</li><br>
+                <li>- Prenotazione postazione a priorità alta</li><br>
+                <li>- 25% di sconto su attività organizzate da InternoZer0 (Posto garantito)</li><br>
               </ul>
             </div>
             <div class="card-action">

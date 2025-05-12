@@ -6,17 +6,100 @@
 {{- $buttonText2 := index $hero "buttontext2" }}
 {{- $buttonLink := index $hero "buttonlink" }}
 {{- $buttonLink2 := index $hero "buttonlink2" }}
-{{- $image      := index $hero "image" }}
+{{- $images      := index $hero "images" }}
+{{- $links      := index $hero "links" }}
+
 <div class="hero-body">
   <div class="container">
     <div class="columns is-vcentered">
       <div class="column is-5 is-offset-1">
-        <figure class="image is-4by3">
-          <img src="{{ printf "images/%s" $image | relURL }}" alt="Description">
-        </figure>
-      </div>
-      <div class="column is-6 is-offset-1 landing-caption">
-        <h1 class="title is-4 is-bold is-spaced">
+        <div id="gallery" class="gallery-container" style="position: relative; text-align: center;"></div>
+        <div style="text-align: center; margin-top: 10px;">
+        </div>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const galleryContainer = document.getElementById("gallery");
+            const imageFolder = "{{ "images/gallery/" | relURL }}";
+            const images = [
+              { src: "fulllogo.svg", link: "#section2a" },
+//              { src: "fulllogo1.svg", link: "/page2" },
+//             { src: "fulllogo2.svg", link: "/page3" }
+            ]; // Replace with actual image file names and links
+            let currentIndex = 0;
+            let autoSwitchInterval;
+
+            // Create an anchor element to wrap the img element
+            const linkElement = document.createElement("a");
+            linkElement.href = images[currentIndex].link;
+            galleryContainer.appendChild(linkElement);
+
+            // Create an img element for the gallery
+            const imgElement = document.createElement("img");
+            imgElement.src = `${imageFolder}${images[currentIndex].src}`;
+            imgElement.alt = "Gallery Image";
+            imgElement.classList.add("gallery-image");
+            linkElement.appendChild(imgElement);
+
+            // Force images to be the same size and add padding
+            imgElement.style.width = "400px"; // Set desired width
+            imgElement.style.height = "$400px"; // Set desired height
+            imgElement.style.objectFit = "cover"; // Ensure proper scaling
+            imgElement.style.padding = "10px"; // Add padding around the image
+
+            // Create navigation lines
+            const linesContainer = document.createElement("div");
+            linesContainer.style.display = "flex";
+            linesContainer.style.justifyContent = "center";
+            linesContainer.style.alignItems = "center";
+            linesContainer.style.margin = "0 10px";
+
+            const lines = images.map((_, index) => {
+              const line = document.createElement("div");
+              line.style.width = "30px";
+              line.style.height = "5px";
+              line.style.margin = "0 5px";
+              line.style.backgroundColor = index === currentIndex ? "orange" : "grey";
+              line.style.cursor = "pointer"; // Make lines clickable
+              line.addEventListener("click", () => {
+          currentIndex = index; // Update current index to the clicked line
+          updateGallery();
+          resetAutoSwitch(); // Reset the auto-switch interval
+              });
+              linesContainer.appendChild(line);
+              return line;
+            });
+
+            // Add navigation lines to the container
+            galleryContainer.parentElement.appendChild(linesContainer);
+
+            // Update gallery function
+            const updateGallery = () => {
+              imgElement.src = `${imageFolder}${images[currentIndex].src}`;
+              linkElement.href = images[currentIndex].link;
+              lines.forEach((line, index) => {
+          line.style.backgroundColor = index === currentIndex ? "orange" : "grey";
+              });
+            };
+
+            // Function to reset the auto-switch interval
+            const resetAutoSwitch = () => {
+              clearInterval(autoSwitchInterval);
+              autoSwitchInterval = setInterval(() => {
+          currentIndex = (currentIndex + 1) % images.length; // Cycle through images
+          updateGallery();
+              }, 5000);
+            };
+
+            // Function to update the image every 5 seconds
+            autoSwitchInterval = setInterval(() => {
+              currentIndex = (currentIndex + 1) % images.length; // Cycle through images
+              updateGallery();
+            }, 5000);
+          });
+        </script>
+            </div>
+      <div class="column is-5 is-offset-1 landing-caption">
+        <h1 class="title is-3 is-bold is-spaced">
           {{ $title }}
         </h1>
         {{ with $subtitle }}
@@ -30,9 +113,6 @@
         </h2>
         {{ end }}
         <p class="buttons-container">
-          <a class="button cta rounded primary-btn raised" href="{{ $buttonLink2 }}">
-            {{ $buttonText2 }}
-          </a><br><br>
           <a class="button cta rounded primary-btn raised" href="{{ $buttonLink }}">
             {{ $buttonText }}
           </a>
