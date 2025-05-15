@@ -1,0 +1,9 @@
+{{ define "main" }}
+
+  {{ partial "landing/single.html" . }}
+
+  {{ if .Params.include_footer }}
+  {{ partial "footer.html" . }}
+  {{ end }}
+
+{{ end }}
