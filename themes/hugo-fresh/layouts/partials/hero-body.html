@@ -22,8 +22,9 @@
             const imageFolder = "{{ "images/gallery/" | relURL }}";
             const images = [
               { src: "fulllogo.svg", link: "#section2a" },
-//              { src: "fulllogo1.svg", link: "/page2" },
-//             { src: "fulllogo2.svg", link: "/page3" }
+              { src: "8psq.jpg", link: "#section2a" },
+              { src: "4psq.jpg", link: "#section2a" },
+              { src: "mesq.jpg", link: "#section2a" }
             ]; // Replace with actual image file names and links
             let currentIndex = 0;
             let autoSwitchInterval;
@@ -87,14 +88,14 @@
               autoSwitchInterval = setInterval(() => {
           currentIndex = (currentIndex + 1) % images.length; // Cycle through images
           updateGallery();
-              }, 5000);
+              }, 6000);
             };
 
-            // Function to update the image every 5 seconds
+            // Function to update the image every 6 seconds
             autoSwitchInterval = setInterval(() => {
               currentIndex = (currentIndex + 1) % images.length; // Cycle through images
               updateGallery();
-            }, 5000);
+            }, 6000);
           });
         </script>
             </div>
