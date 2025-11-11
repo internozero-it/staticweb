@@ -55,16 +55,18 @@ params:
       url: https://www.powerupstudio.it
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
+  - title: "Classi e Training"
+    url: "/indicecorsi/"
   - title: Newsletter
-    url: "#section2"  
+    url: "/#section2"  
   - title: Ingressi
-    url: "#section1"
+    url: "/#section1"
   - title: Prenota
-    url: "#section6"
+    url: "/#section6"
   - title: Perché InternoZer0?
-    url: "#section2a"
+    url: "/#section2a"
   - title: Contatti
-    url: "#section5"
+    url: "/#section5"
   section1:
     title: Ingressi @InternoZer0
     subtitle:
