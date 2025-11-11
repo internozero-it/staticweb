@@ -6,10 +6,10 @@ title = 'Calendario Corsi'
 
 
 
-## Inglese da Parlare
+## Classi Generiche
 
 * [English Club](/english-club)
-
+* [Diventare Genitori in 2 Dimensioni](/diventare-genitori-in-due-dimensioni)
 
 
 ## IT Corsi Gratuiti
