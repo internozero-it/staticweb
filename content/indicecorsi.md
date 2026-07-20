@@ -11,16 +11,7 @@ title = 'Calendario Corsi'
 * [English Club](/english-club)
 * [Diventare Genitori in 2 Dimensioni](/diventare-genitori-in-due-dimensioni)
 
-
-## IT Corsi Gratuiti
-
-* [Sicuri Online - Riconoscere ed evitare le truffe online IT/EN](/riconoscere-ed-evitare-le-truffe-online)
-* [Imparare ad usare il Computer: IT/EN](/imparare-ad-usare-il-computer)
-* [Intelligenza Artificiale: concetti di base IT/EN](/intelligenza-artificiale-concetti-di-base)
-
-
-
-## IT Corsi a Pagamento 
+## Computers 
 
 * [Intelligenza Artificiale: Livello Avanzato IT/EN](/intelligenza-artificiale-livello-avanzato)
 * [Imparare ad usare il Computer: gestione dati e sicurezza IT/EN](/imparare-ad-usare-il-computer-gestione-dati-e-sicurezza)
@@ -28,7 +19,9 @@ title = 'Calendario Corsi'
 * [Capire il Cloud Computing: IT/EN](/capire-il-cloud-computing)
 * [Corso per Sistemista LINUX: IT/EN](/corso-per-sistemista-linux)
 * [Corso DevOps e Kubernetes: IT/EN](/corso-devops-e-kubernetes)
-
+* [Sicuri Online - Riconoscere ed evitare le truffe online IT/EN](/riconoscere-ed-evitare-le-truffe-online)
+* [Corso di computer - Cominciamo dalla Basi: IT/EN](corso-di-computer-cominciamo-dalle-basi.md)
+* [Intelligenza Artificiale: concetti di base IT/EN](/intelligenza-artificiale-concetti-di-base)
 
 
 ## IT Vendita e Prevendita a Pagamento
