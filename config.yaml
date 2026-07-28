@@ -48,17 +48,17 @@ params:
 
     # Footer logos (from static/images/logos/clients/*.svg)
     # urls are optional
-    clientlogos:
-    - logo: repetitiveit
-      url: https://www.repetitive.it
-    - logo: powerupstudio
-      url: https://www.powerupstudio.it
+  #  clientlogos:
+  #  - logo: repetitiveit
+  #    url: https://www.repetitive.it
+  #  - logo: powerupstudio
+  #    url: https://www.powerupstudio.it
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
-  - title: "Classi e Training"
-    url: "/indicecorsi/"
-  - title: Newsletter
-    url: "/#section2"  
+  #- title: "Classi e Training"
+  #  url: "/indicecorsi/"
+  #- title: Newsletter
+  #  url: "/#section2"  
   - title: Ingressi
     url: "/#section1"
   - title: Prenota
@@ -90,7 +90,7 @@ params:
     title: Confronta e Prenota
     subtitle:
     tiles:
-    - title: Giornaliero da 15€
+    - title: Giornaliero da 30€ + IVA
       icon: hours-9
       list:
       - "- Dalle 9:00 alle 18:00"
@@ -98,7 +98,7 @@ params:
       - "- Prenotazione postazione a priorità bassa"
       url: "#section6"
       buttonText: "Prenota Ora!"
-    - title: Settimanale da 70€
+    - title: Settimanale da 140€ + IVA
       icon: calendar-week
       list:
       - "- 5 giorni consecutivi (Lun-Ven)"
@@ -106,7 +106,7 @@ params:
       - "- 10% di sconto su attività organizzate da InternoZer0 (Posto garantito)"
       url: "#section6"
       buttonText: "Prenota Ora!"
-    - title: Mensile da 250€
+    - title: Mensile da 500€ + IVA 
       icon: calendar-month
       list:
       - "- 4 settimane consecutive (Lun-Ven)"
@@ -162,9 +162,9 @@ params:
     bulmalogo: false
     quicklinks:
       column1:
-        title: "Dove ci troviamo"
+        title: "Dove ci trovate"
         links:
-        - text: Via del Melograno, angolo con via delle Betulle, 5013 Campi Bisenzio (FI)
+        - text: Via del Melograno 12, 5013 Campi Bisenzio (FI)
           link: https://maps.app.goo.gl/owLasgSvYsaU3xMd8
 #          link: /
 #        - text: Why choose our product?
