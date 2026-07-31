@@ -1,6 +1,6 @@
 baseURL: https://www.internozero.it
 languageCode: it
-title: Qui puoi semplicemente lavorare!
+title: Senza classi! Senza orari! Il tuo inglese al lavoro!
 
 theme: 'hugo-fresh'
 
@@ -31,18 +31,24 @@ params:
     name: "Open Sans"
     sizes: [400,400]
   hero:
+    # Hero background image (from static/images/_____)
+    image: gallery/campocorto.jpg
     # Main hero title
-    title: Qui puoi semplicemente lavorare!
+    title:  The Full English Immersion Hub
     # Hero subtitle (optional)
-    subtitle: 'Lo spazio DEDICATO al Co-Working, a Campi Bisenzio' 
+    subtitle: Non studiare l'inglese, lavoraci dentro!
+    # Hero subsubtitle (optional)
     subsubtitle: 
       - A 100 metri dalla fermata del BUS e 150 metri dalla Coop di via Palagetta
     # Button text
-    buttontext: Prenota Subito!
-    buttontext2: ..Dove e Come..
-    # Where the main hero button links to
-    buttonlink: "#section6"
-    buttonlink2: "#section2a"
+    buttontext: Scopri
+    buttonlink: "#section2a"
+    # Second button text
+    buttontext2: Confronta
+    buttonlink2: "#section12"
+    # Third button text
+    buttontext3: Prenota
+    buttonlink3: "#section6"
     # Hero images for carousel (from static/images/gallery/_____)
     # Urls and image names are inside the hero-body template because it is javascript
 
@@ -60,58 +66,64 @@ params:
   #- title: Newsletter
   #  url: "/#section2"  
   - title: Ingressi
-    url: "/#section1"
+    url: "/#section12"
   - title: Prenota
     url: "/#section6"
-  - title: Perché InternoZer0?
+  - title: Perché InternoZero?
     url: "/#section2a"
   - title: Contatti
     url: "/#section5"
   section1:
-    title: Ingressi @InternoZer0
+    title: Ingressi @InternoZero
     subtitle:
     tiles:
-    - title: Giornaliero da 15€
+    - title: Giornaliero da 40€ + IVA
       icon: hours-9
       text: 9:00-18:00
+      text1: Nominale
       url: "#section12"
       buttonText: Confronta gli ingressi
-    - title: Settimanale da 70€
+    - title: Settimanale da 160€ + IVA
       icon: calendar-week
       text: Da Lunedì a Venerdì
+      text1: Nominale da inizio settimana
       url: "#section12"
       buttonText: Confronta gli ingressi
-    - title: Mensile da 250€
+    - title: Mensile da 500€ + IVA
       icon: calendar-month
       text: 4 Settimane, Lun-Ven
+      text1: Trasferibile
       url: "#section12"
       buttonText: Confronta gli ingressi
   section12:
-    title: Confronta e Prenota
+    title: Ingressi @InternoZero
     subtitle:
     tiles:
-    - title: Giornaliero da 30€ + IVA
+    - title: Giornaliero da 40€ + IVA
       icon: hours-9
       list:
       - "- Dalle 9:00 alle 18:00"
-      - "- Acquista un carnet di ingressi da usare quando vuoi"
-      - "- Prenotazione postazione a priorità bassa"
+      - "- Acquista uno o più ingressi giornalieri da usare quando vuoi"
+      - "- Postazione: if you fit, you sit! (Posto non garantito)"
+      - "- Ingressi Nominali: 1 ingresso a persona, non trasferibile"
       url: "#section6"
       buttonText: "Prenota Ora!"
-    - title: Settimanale da 140€ + IVA
+    - title: Settimanale da 160€ + IVA
       icon: calendar-week
       list:
       - "- 5 giorni consecutivi (Lun-Ven)"
-      - "- Prenotazione postazione a priorità media"
-      - "- 10% di sconto su attività organizzate da InternoZer0 (Posto garantito)"
+      - "- Postazione: booked 4 the Week!"
+      - "- 1 ingresso giornaliero extra da usare con chi vuoi e quando vuoi"
+      - "- Ingressi parzialmente nominali per aziende: 1 dipendente a settimana"
       url: "#section6"
       buttonText: "Prenota Ora!"
     - title: Mensile da 500€ + IVA 
       icon: calendar-month
       list:
       - "- 4 settimane consecutive (Lun-Ven)"
-      - "- Prenotazione postazione a priorità alta"
-      - "- 25% di sconto su attività organizzate da InternoZer0 (Posto garantito)"
+      - "- Postazione: booked 4 the Month!"
+      - "- 1 ingresso giornaliero extra a settimana da usare con chi vuoie quando vuoi"
+      - "- Ingressi flessibili: manda i tuoi dipendenti quando vuoi, senza vincoli di giorni"
       url: "#section6"
       buttonText: "Prenota Ora!"
   section2:
@@ -120,17 +132,17 @@ params:
     subtitle: ...per ricevere aggiornamenti su attività ed eventi!
     buttonText: "Eventi esclusivi ti aspettano!"
   section2a:
-    title2a: "Perché scegliere InternoZer0? Riassunto in 3 Parole:"
-    subtitle2a: Compatto, Connesso, Confortevole
+    title2a: "Entra in un Augmented Office!"
+    subtitle2a: E impara mentre resti produttivo!
     text2a: 
-      - "InternoZer0 è uno spazio di Co-Working limitato a 8 postazioni di lavoro, per garantire un ambiente tranquillo e confortevole."
-      - "Lo spazio di Co-Working si trova nella parte sud di Campi Bisenzio a 100 metri dalla fermata del BUS in via Palagetta e 150 metri dal supermercato Coop; una location perfetta dove trovare facillmente parcheggio ed a non più di 2 minuti a piedi da supermercato, bar, ristorante oppure da un trancio di pizza da mangiare passeggiando."
-      - "### Da InternoZer0 Inoltre Trovi:"
-      - "- WI-FI 5G connesso a Fibra FTTH"
-      - "- Riscaldamento/aria condizionata"
-      - "- Mini-Cucina con: acqua potabile, minifrigo, bollitore, macchinetta del caffè a cialde"
+      - "**Internozero è il primo Full English Immersion Hub dove professionisti e manager di diverse aziende lavorano affiancati in un ambiente 100% English-speaking.**"
+      - " - **Lezioni Destrutturate:** vivremo in scenari realistici, parleremo di progetti, email, presentazioni e di 'Water Cooler Talk.' Niente lezioni tradizionali e niente compiti a casa!"
+      - " - **Parlare Corporate:** impara a riconoscere le sfumature e le espressioni usate durante le riunioni e negli uffici internazionali."
+      - " - **Acquisisci Sicurezza:**  -*Per parlare bene inglese devi andare in Inghilterra!*- Dicevano... Con InternoZero puoi farlo senza muoverti dalla provincia di Firenze!"
+      - " - **Feedback Istantaneo:** grazie ai tutor sempre in ufficio per darti un feedback su errori di pronuncia, grammatica, ed aiutarti ad arricchire il tuo vocabolario."
+      - " - **Batti L'Ansia:** durante i Daily Corporate Touchpoint e con lo 1-on-1 Daily Corporate Coffee comincia a parlare Inglese in pubblico."
   section5:
-    title: Vuoi sapere come funziona InternoZer0?
+    title: Vuoi sapere come funziona InternoZero?
     subtitle: Contattaci, vieni a trovarci, scopri il nostro spazio!
     buttonText: Send Message
     action: https://formspree.io/f/meogevzz
@@ -162,10 +174,10 @@ params:
     bulmalogo: false
     quicklinks:
       column1:
-        title: "Dove ci trovate"
+        title: "Dove Siamo"
         links:
-        - text: Via del Melograno 12, 5013 Campi Bisenzio (FI)
-          link: https://maps.app.goo.gl/owLasgSvYsaU3xMd8
+        - text: Via del Melograno 12, a Campi B.zio (FI)
+          link: https://maps.app.goo.gl/dWMzqS9FGsqSFCTf6
 #          link: /
 #        - text: Why choose our product?
 #          link: /
@@ -186,10 +198,10 @@ params:
 #          link: /
 #        - text: Developers
 #          link: /
-      column3:
-        title: "Website by"
-        links:
-        - text: Repetitive IT
-          link: https://www.repetitive.it
+#      column3:
+#        title: "Website by"
+#        links:
+#        - text: Repetitive IT
+#          link: https://www.repetitive.it
 #        - text: Tech articles
 #          link: /blog/second
