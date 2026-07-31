@@ -1,6 +1,6 @@
 +++
 date = '2025-11-10T11:20:02+01:00'
-draft = false
+draft = true
 title = 'Solution Architect Cloud'
 +++
 

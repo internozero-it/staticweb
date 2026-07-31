@@ -4,9 +4,11 @@
 {{- $subsubtitle := index $hero "subsubtitle" }}
 {{- $buttonText := index $hero "buttontext" }}
 {{- $buttonText2 := index $hero "buttontext2" }}
+{{- $buttonText3 := index $hero "buttontext3" }}
 {{- $buttonLink := index $hero "buttonlink" }}
 {{- $buttonLink2 := index $hero "buttonlink2" }}
-{{- $images      := index $hero "images" }}
+{{- $buttonLink3 := index $hero "buttonlink3" }}
+{{- $image      := index $hero "image" }}
 {{- $links      := index $hero "links" }}
 
 <div class="hero-body">
@@ -14,17 +16,24 @@
     <div class="columns is-vcentered">
       <div class="column is-5 is-offset-1">
         <div id="gallery" class="gallery-container" style="position: relative; text-align: center;"></div>
-        <div style="text-align: center; margin-top: 10px;">
-        </div>
-        <script>
+          <div style="text-align: center; margin-top: 10px;">
+            <figure class="image is-126by9">
+              <img src="{{ printf "images/%s" $image | relURL }}" alt="Description">
+            </figure>
+          </div>
+<!--        <script>
           document.addEventListener("DOMContentLoaded", function () {
             const galleryContainer = document.getElementById("gallery");
             const imageFolder = "{{ "images/gallery/" | relURL }}";
             const images = [
               { src: "fulllogo.svg", link: "#section2a" },
-              { src: "8psq.jpg", link: "#section2a" },
-              { src: "4psq.jpg", link: "#section2a" },
-              { src: "mesq.jpg", link: "#section2a" }
+              { src: "campolungo.jpg", link: "#section2a" },
+              { src: "minicucina.jpg", link: "#section2a" },
+              { src: "partitore1.jpg", link: "#section2a" },
+              { src: "partitore2.jpg", link: "#section2a" },
+              { src: "partitore3.jpg", link: "#section2a" },
+              { src: "partitoredesk1.jpg", link: "#section2a" },
+              { src: "partitoredesk2.jpg", link: "#section2a" }
             ]; // Replace with actual image file names and links
             let currentIndex = 0;
             let autoSwitchInterval;
@@ -97,7 +106,7 @@
               updateGallery();
             }, 6000);
           });
-        </script>
+        </script> -->
             </div>
       <div class="column is-5 is-offset-1 landing-caption">
         <h1 class="title is-3 is-bold is-spaced">
@@ -117,7 +126,14 @@
           <a class="button cta rounded primary-btn raised" href="{{ $buttonLink }}">
             {{ $buttonText }}
           </a>
+          <a class="button cta rounded primary-btn raised" href="{{ $buttonLink2 }}">
+            {{ $buttonText2 }}
+          </a>
+          <a class="button cta rounded primary-btn raised" href="{{ $buttonLink3 }}">
+            {{ $buttonText3 }}
+          </a>
         </p>
+<!-- This is the original image code with single image -->
       </div>
     </div>
   </div>
