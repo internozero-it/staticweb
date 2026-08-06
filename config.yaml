@@ -178,9 +178,8 @@ params:
         links:
         - text: Via del Melograno 12, a Campi B.zio (FI)
           link: https://maps.app.goo.gl/dWMzqS9FGsqSFCTf6
-#          link: /
-#        - text: Why choose our product?
-#          link: /
+        - text: Privacy Policy
+          link: /privacy
 #        - text: Compare features
 #          link: /
 #        - text: Our roadmap
