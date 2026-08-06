@@ -148,8 +148,8 @@ params:
     action: https://formspree.io/f/meogevzz
     method: POST
   section6:
-    title: Prenota una scrivania
-    subtitle: Seleziona il tipo di ingresso ed il quando, poi ti richiamiamo noi!
+    title: Comincia Subito!
+    subtitle: Seleziona il tipo di ingresso e quando vorresti cominciare, poi ti richiamiamo noi!
     buttonText: Send Message
     action: https://formspree.io/f/mnnddlvz
     method: POST
