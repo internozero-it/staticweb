@@ -151,7 +151,7 @@ params:
     title: Prenota una scrivania
     subtitle: Seleziona il tipo di ingresso ed il quando, poi ti richiamiamo noi!
     buttonText: Send Message
-    action: https://formspree.io/f/meogevzz
+    action: https://formspree.io/f/mnnddlvz
     method: POST
   footer:
     # Logo (from static/images/logos/___)
