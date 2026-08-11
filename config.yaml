@@ -3,6 +3,8 @@ languageCode: it
 title: Senza classi! Senza orari! Il tuo inglese al lavoro!
 
 theme: 'hugo-fresh'
+# Enable robots.txt generation
+enableRobotsTXT: true
 # Put in your tracking code without quotes like this: UA-XXX for universal tracking or G-XXX analytics v4 tracking
 googleAnalytics: AW-17075018039
 # Disables warnings
