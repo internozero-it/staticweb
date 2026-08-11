@@ -1,0 +1,7 @@
+Plaintext
+
+User-agent: *
+Allow: /
+
+# Sitemaps (RFC 9309 Section 2.3)
+Sitemap: {{ "sitemap.xml" | absURL }}
