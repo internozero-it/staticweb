@@ -75,6 +75,8 @@ params:
     url: "/#section2a"
   - title: Contatti
     url: "/#section5"
+  - title: F.A.Q.
+    url: "/faq/"
   section1:
     title: Ingressi @InternoZero
     subtitle:
