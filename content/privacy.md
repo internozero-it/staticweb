@@ -1,9 +1,10 @@
 +++
-date = '2026-08-06T11:20:02+01:00'
+date = '2026-08-11T11:20:02+01:00'
 draft = false
 title = 'Privacy Policy'
 +++
 
+AGGIORNATO IL GIORNO 11/agosto/2026
 
 # Informativa sulla Privacy
 
@@ -66,6 +67,8 @@ Per il funzionamento del sito e la gestione delle richieste, il Titolare può av
 * **Google Analytics**, per raccogliere statistiche aggregate sull'utilizzo del sito.
 * **Google Ads**, per misurare le performance delle campagne pubblicitarie e, previo consenso ove richiesto, per finalità di analisi e conversione.
 * **Formspree** oppure **Google Forms**, per la raccolta e l'inoltro dei dati inseriti nei moduli di contatto.
+* **Facebook**, per misurare le performance delle campagne pubblicitarie e, previo consenso ove richiesto, per finalità di analisi e conversione.
+
 
 I dati inviati tramite i moduli vengono utilizzati esclusivamente per ricontattare l'utente, rispondere alle richieste ricevute e valutare l'eventuale interesse verso i servizi offerti da Interno Zero.
 
