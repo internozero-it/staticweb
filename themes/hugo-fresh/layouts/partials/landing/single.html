@@ -1,1 +1,7 @@
 {{ partial "single/content.html" . }}
+{{ if .Site.Params.section7 }}
+{{ partial "section7.html" . }}
+{{ end }}
+{{ if .Site.Params.section2 }}
+{{ partial "hero.html" . }}
+{{ end }}

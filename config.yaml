@@ -44,13 +44,13 @@ params:
       - A 100 metri dalla fermata del BUS e 150 metri dalla Coop di via Palagetta
     # Button text
     buttontext: Scopri
-    buttonlink: "#section2a"
+    buttonlink: "https://www.internozero.it/#section2a"
     # Second button text
     buttontext2: Confronta
-    buttonlink2: "#section12"
+    buttonlink2: "https://www.internozero.it/#section12"
     # Third button text
     buttontext3: Prenota
-    buttonlink3: "#section6"
+    buttonlink3: "https://www.internozero.it/#section6"
     # Hero images for carousel (from static/images/gallery/_____)
     # Urls and image names are inside the hero-body template because it is javascript
 
@@ -154,6 +154,12 @@ params:
   section6:
     title: Comincia Subito!
     subtitle: Seleziona il tipo di ingresso e quando vorresti cominciare, poi ti richiamiamo noi!
+    buttonText: Send Message
+    action: https://formspree.io/f/mnnddlvz
+    method: POST
+  section7:
+    title: NON PERDERE LA PROMO!
+    subtitle: Compila il form e ti richiameremo per darti tutte le informazioni!
     buttonText: Send Message
     action: https://formspree.io/f/mnnddlvz
     method: POST
