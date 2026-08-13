@@ -6,7 +6,7 @@ layout = 'landing'
 +++
 
 <div class="container is-max-desktop">
-  <img src="/images/landing/UKNinja.png" alt="SlashOctober Campaign">
+  <img src="/images/landing/FacebookHeadSlashOctober.jpeg" alt="SlashOctober Campaign">
 </div>
 
 
