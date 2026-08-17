@@ -81,19 +81,19 @@ params:
     title: Ingressi @InternoZero
     subtitle:
     tiles:
-    - title: Giornaliero da 40€ + IVA
+    - title: Giornaliero da 40€
       icon: hours-9
       text: 9:00-18:00
       text1: Nominale
       url: "#section12"
       buttonText: Confronta gli ingressi
-    - title: Settimanale da 160€ + IVA
+    - title: Settimanale da 160€
       icon: calendar-week
       text: Da Lunedì a Venerdì
       text1: Nominale da inizio settimana
       url: "#section12"
       buttonText: Confronta gli ingressi
-    - title: Mensile da 500€ + IVA
+    - title: Mensile da 500€
       icon: calendar-month
       text: 4 Settimane, Lun-Ven
       text1: Trasferibile
@@ -103,7 +103,7 @@ params:
     title: Ingressi @InternoZero
     subtitle:
     tiles:
-    - title: Giornaliero da 40€ + IVA
+    - title: Giornaliero da 40€
       icon: hours-9
       list:
       - "- Dalle 9:00 alle 18:00"
@@ -112,7 +112,7 @@ params:
       - "- Ingressi Nominali: 1 ingresso a persona, non trasferibile"
       url: "#section6"
       buttonText: "Prenota Ora!"
-    - title: Settimanale da 160€ + IVA
+    - title: Settimanale da 160€
       icon: calendar-week
       list:
       - "- 5 giorni consecutivi (Lun-Ven)"
@@ -121,7 +121,7 @@ params:
       - "- Ingressi parzialmente nominali per aziende: 1 dipendente a settimana"
       url: "#section6"
       buttonText: "Prenota Ora!"
-    - title: Mensile da 500€ + IVA 
+    - title: Mensile da 500€
       icon: calendar-month
       list:
       - "- 4 settimane consecutive (Lun-Ven)"
