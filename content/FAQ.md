@@ -24,9 +24,9 @@ Tutor dedicati sono sempre presenti all'interno dell'ufficio per offrire **feedb
 ### Quali sono le opzioni di ingresso e i costi?
 InternoZero offre formule flessibili per professionisti e aziende:
 
-* **Ingresso Giornaliero (Daily Pass):** a partire da **40€ + IVA**. Accesso dalle 09:00 alle 18:00 con modalità postazione *"if you fit, you sit"*. Gli ingressi possono essere usati quando vuoi (nominali per persona).
-* **Pass Settimanale (Weekly Pass):** a partire da **160€ + IVA**. Include 5 giorni consecutivi (Lunedì-Venerdì) con postazione riservata per la settimana, più **1 ingresso giornaliero extra** omaggio da usare con un collega o chi vuoi.
-* **Pass Mensile (Monthly Pass):** a partire da **500€ + IVA**. Include 4 settimane (Lunedì-Venerdì) per mese solare, con postazione riservata per la settimana, più **1 ingresso giornaliero extra a settimana** in omaggio da usare con un collega o chi vuoi.
+* **Ingresso Giornaliero (Daily Pass):** a partire da **40€**. Accesso dalle 09:00 alle 18:00 con modalità postazione *"if you fit, you sit"*. Gli ingressi possono essere usati quando vuoi (nominali per persona).
+* **Pass Settimanale (Weekly Pass):** a partire da **160€**. Include 5 giorni consecutivi (Lunedì-Venerdì) con postazione riservata per la settimana, più **1 ingresso giornaliero extra** omaggio da usare con un collega o chi vuoi.
+* **Pass Mensile (Monthly Pass):** a partire da **500€**. Include 4 settimane (Lunedì-Venerdì) per mese solare, con postazione riservata per la settimana, più **1 ingresso giornaliero extra a settimana** in omaggio da usare con un collega o chi vuoi.
 
 ### Le aziende possono acquistare ingressi per i propri dipendenti?
 Sì. I pacchetti settimanali prevedono la possibilità di ingressi parzialmente nominali pensati per le aziende, consentendo la rotazione di un dipendente a settimana.
