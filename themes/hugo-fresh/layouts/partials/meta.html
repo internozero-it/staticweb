@@ -1,7 +1,7 @@
 {{ template "_internal/google_analytics.html" . }}
 {{- $title := .Title | default .Site.Title -}}
 {{- $description := .Params.summary | default .Site.Params.description | default "InternoZero è il Full English Immersion Hub e spazio di coworking a Campi Bisenzio, Firenze." -}}
-{{- $image := "images/gallery/campocorto.jpg" -}}
+{{- $image := "images/social/campocorto.jpg" | absURL -}}
 
 <meta property="og:title" content="{{ $title }}">
 <meta property="og:description" content="{{ $description }}">
@@ -10,8 +10,8 @@
 <meta property="og:site_name" content="InternoZero">
 <meta property="og:locale" content="it_IT">
 
-<meta property="og:image" content="{{ $image | absURL }}">
-<meta property="og:image:secure_url" content="{{ $image | absURL }}">
+<meta property="og:image" content="{{ $image }}">
+<meta property="og:image:secure_url" content="{{ $image }}">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="4032">
 <meta property="og:image:height" content="2120">
@@ -21,8 +21,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="" />
-<meta name="twitter:creator" content="" />
 <meta name="twitter:title" content="{{ $title }}" />
 <meta name="twitter:description" content="{{ $description }}" />
-<meta name="twitter:image" content="{{ $image | absURL }}" />
+<meta name="twitter:image" content="{{ $image }}" />
