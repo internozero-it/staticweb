@@ -1,8 +1,28 @@
 {{ template "_internal/google_analytics.html" . }}
-{{ if eq .Site.Params.openGraph true }}
-{{ template "_internal/opengraph.html" . }}
-{{ end }}
+{{- $title := .Title | default .Site.Title -}}
+{{- $description := .Params.summary | default .Site.Params.description | default "InternoZero è il Full English Immersion Hub e spazio di coworking a Campi Bisenzio, Firenze." -}}
+{{- $image := "images/gallery/campocorto.jpg" -}}
+
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:site_name" content="InternoZero">
+<meta property="og:locale" content="it_IT">
+
+<meta property="og:image" content="{{ $image | absURL }}">
+<meta property="og:image:secure_url" content="{{ $image | absURL }}">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="4032">
+<meta property="og:image:height" content="2120">
+<meta property="og:image:alt" content="InternoZero Full English Immersion Hub">
 <meta name="description" content="{{ if .Params.summary }}{{ .Params.summary }}{{ else if .Site.Params.Description }}{{ .Site.Params.Description }}{{ else }}English Immersion Hub @CampiBisenzio{{ end }}" />
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:title" content="Senza classi! Senza orari! Il tuo inglese al lavoro!" />
+<meta name="twitter:description" content="English Immersion Hub @CampiBisenzio" />
+<meta name="twitter:image" content="" />
