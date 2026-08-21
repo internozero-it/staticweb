@@ -44,13 +44,13 @@ params:
       - A 100 metri dalla fermata del BUS e 150 metri dalla Coop di via Palagetta
     # Button text
     buttontext: Scopri
-    buttonlink: "#section2a"
+    buttonlink: "https://www.internozero.it/#section2a"
     # Second button text
     buttontext2: Confronta
-    buttonlink2: "#section12"
+    buttonlink2: "https://www.internozero.it/#section12"
     # Third button text
     buttontext3: Prenota
-    buttonlink3: "#section6"
+    buttonlink3: "https://www.internozero.it/#section6"
     # Hero images for carousel (from static/images/gallery/_____)
     # Urls and image names are inside the hero-body template because it is javascript
 
@@ -81,19 +81,19 @@ params:
     title: Ingressi @InternoZero
     subtitle:
     tiles:
-    - title: Giornaliero da 40€ + IVA
+    - title: Giornaliero da 40€
       icon: hours-9
       text: 9:00-18:00
       text1: Nominale
       url: "#section12"
       buttonText: Confronta gli ingressi
-    - title: Settimanale da 160€ + IVA
+    - title: Settimanale da 160€
       icon: calendar-week
       text: Da Lunedì a Venerdì
       text1: Nominale da inizio settimana
       url: "#section12"
       buttonText: Confronta gli ingressi
-    - title: Mensile da 500€ + IVA
+    - title: Mensile da 500€
       icon: calendar-month
       text: 4 Settimane, Lun-Ven
       text1: Trasferibile
@@ -103,7 +103,7 @@ params:
     title: Ingressi @InternoZero
     subtitle:
     tiles:
-    - title: Giornaliero da 40€ + IVA
+    - title: Giornaliero da 40€
       icon: hours-9
       list:
       - "- Dalle 9:00 alle 18:00"
@@ -112,7 +112,7 @@ params:
       - "- Ingressi Nominali: 1 ingresso a persona, non trasferibile"
       url: "#section6"
       buttonText: "Prenota Ora!"
-    - title: Settimanale da 160€ + IVA
+    - title: Settimanale da 160€
       icon: calendar-week
       list:
       - "- 5 giorni consecutivi (Lun-Ven)"
@@ -121,7 +121,7 @@ params:
       - "- Ingressi parzialmente nominali per aziende: 1 dipendente a settimana"
       url: "#section6"
       buttonText: "Prenota Ora!"
-    - title: Mensile da 500€ + IVA 
+    - title: Mensile da 500€
       icon: calendar-month
       list:
       - "- 4 settimane consecutive (Lun-Ven)"
@@ -154,6 +154,12 @@ params:
   section6:
     title: Comincia Subito!
     subtitle: Seleziona il tipo di ingresso e quando vorresti cominciare, poi ti richiamiamo noi!
+    buttonText: Send Message
+    action: https://formspree.io/f/mnnddlvz
+    method: POST
+  section7:
+    title: NON PERDERE LA PROMO!
+    subtitle: Compila il form e ti richiameremo per darti tutte le informazioni!
     buttonText: Send Message
     action: https://formspree.io/f/mnnddlvz
     method: POST

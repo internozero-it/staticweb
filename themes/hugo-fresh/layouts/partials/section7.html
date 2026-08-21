@@ -1,13 +1,10 @@
-{{- $section6   := .Site.Params.section6 }}
-{{- if eq $section6 true }}
-{{- $section5 = dict "_" "_" }}
-{{- end }}
-{{- $title      := index $section6 "title" | default "Drop us a line or two "}}
-{{- $subtitle   := index $section6 "subtitle" | default "We'd love to hear from you" }}
-{{- $action     := index $section6 "action" }}
-{{- $method     := index $section6 "method" }}
-{{- $buttonText := index $section6 "buttontext" | default "Send Message" }}
-<section class="section section-light-grey is-medium" id="section6">
+{{- $section7   := .Site.Params.section7 }}
+{{- $title      := index $section7 "title" | default "Drop us a line or two "}}
+{{- $subtitle   := index $section7 "subtitle" | default "We'd love to hear from you" }}
+{{- $action     := index $section7 "action" }}
+{{- $method     := index $section7 "method" }}
+{{- $buttonText := index $section7 "buttontext" | default "Send Message" }}
+<section class="section section-light-grey is-medium" id="section7">
   <div class="container">
     <div class="title-wrapper has-text-centered">
       <h2 class="title is-2 is-spaced">{{ $title }}</h2>
@@ -22,7 +19,7 @@
             <div class="columns is-multiline">
               <div class="column is-6">
                 <label for="start-date">Data di inizio</label>
-                <input class="input is-medium" name="start-date" type="date" id="start-date" placeholder="Seleziona la data di inizio">
+                <input class="input is-medium" name="start-date" type="date" id="start-date" placeholder="Seleziona la data di inizio" value="2026-09-01">
               </div>              <div class="column is-6">
                 <label>Frequenza</label>
                 <div>
@@ -50,7 +47,7 @@
                 <input class="input is-medium" name="email" type="email" placeholder="La tua email">
               </div>
               <div class="column is-6">
-                <textarea class="textarea" name="message" rows="1" placeholder="Commenti o richieste"></textarea>
+                <textarea class="textarea" name="message" rows="1" placeholder="SLASHOCTOBER26"></textarea>
               </div>
               <div class="form-footer has-text-centered mt-10">
                 <button type="submit" class="button cta is-large primary-btn raised is-clear">{{ $buttonText }}</button>

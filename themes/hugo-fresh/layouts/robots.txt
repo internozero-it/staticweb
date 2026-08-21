@@ -1,7 +1,5 @@
-Plaintext
-
 User-agent: *
 Allow: /
-
+Content-Signal: ai-train=no, search=yes, ai-input=no
 # Sitemaps (RFC 9309 Section 2.3)
 Sitemap: {{ "sitemap.xml" | absURL }}
