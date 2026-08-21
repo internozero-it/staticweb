@@ -15,7 +15,7 @@ InternoZero è il primo **Full English Immersion Hub** e spazio di coworking a C
 Con lo slogan *"Non studiare l'inglese, lavoraci dentro!"*, InternoZero elimina le lezioni tradizionali in aula, la grammatica teorica e i compiti a casa. L'apprendimento avviene in modo naturale attraverso **lezioni destrutturate** basate su scenari lavorativi reali: email, presentazioni, riunioni e conversation da "Water Cooler".
 
 ### Come funziona l'assistenza linguistica durante la giornata di lavoro?
-Tutor dedicati sono sempre presenti all'interno dell'ufficio per offrire **feedback istantaneo** su pronuncia, grammatica e vocabolario mentre lavorate. Inoltre, potrai partecipare ad attività come il *Daily Corporate Touchpoint* e il *1-on-1 Daily Corporate Coffee* per superare l'ansia di parlare in pubblico.
+Tutor  dedicati sono sempre presenti all'interno dell'ufficio per offrire **feedback istantaneo** su pronuncia, grammatica e vocabolario mentre lavorate. Inoltre, potrai partecipare ad attività come il *Daily Corporate Touchpoint* e il *1-on-1 Daily Corporate Coffee* per superare l'ansia di parlare in pubblico.
 
 ---
 
